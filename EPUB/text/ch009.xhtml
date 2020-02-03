@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <title>Tópico 5: Segurança e Permissões de Arquivos</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="../styles/stylesheet1.css" />
+</head>
+<body>
+<section id="tópico-5-segurança-e-permissões-de-arquivos" class="level1">
+<h1>Tópico 5: Segurança e Permissões de Arquivos</h1>
+<p><strong>Peso:</strong> 7</p>
+<section id="segurança-básica-e-identificação-de-tipos-de-usuários" class="level2">
+<h2>5.1: Segurança Básica e Identificação de Tipos de Usuários</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>O Linux é um sistema operacional multiusuário. Como o nome sugere, esse tipo de sistema operacional permite que diferentes usuários utilizem o sistema de modo independente. Ou seja, diferentes pessoas podem utilizar o mesmo sistema operacional sem que seus arquivos e personalizações estejam acessíveis a outros usuários.</p>
+<p>Diferentes usuários podem utilizar o sistema operacional ao mesmo tempo. Apesar de não ser comum um mesmo computador possuir mais de um teclado e monitor, é bastante comum que diversos usuários utilizem o mesmo sistema via rede.</p>
+<p>Outra vantagem em manter os usuários em contas distintas é poder controlar seus privilégios dentro do sistema. Um usuário deve poder trabalhar com seus arquivos e ter acesso restrito a certos recursos do computador, mas não deve ter acesso a arquivos de terceiros ou a recursos que podem prejudicar o funcionamento do sistema operacional. O único usuário que possui acesso irrestrito dentro do sistema operacional é o usuário <strong>root</strong>.</p>
+<section id="o-usuário-root" class="level3">
+<h3>O usuário root</h3>
+<p>O principal usuário de um sistema Unix é o usuário chamado <strong>root</strong>. Ele é criado por padrão e é utilizado para configurar o sistema operacional e corrigir eventuais problemas. Também é o único usuário cujo diretório pessoal não está no diretório padrão de usuários, <code>/home</code>, mas na raiz do sistema de arquivos, em <code>/root</code>.</p>
+<blockquote>
+<p><strong>Senha de root</strong></p>
+<p>A senha do usuário root normalmente é definida durante a instalação do sistema operacional. Em alguns casos, não é atribuída uma senha ao usuário root, e será necessário utilizar o comando <code>sudo</code> para realizar operações de root.</p>
+</blockquote>
+<p>Devido ao seu poder irrestrito no sistema operacional, é importante ter muito cuidado quando utilizando o usuário root. Mesmo tratando-se de um computador pessoal utilizado por apenas uma pessoa, é recomendável operar o computador com um usuário convencional.</p>
+</section>
+<section id="usuários-convencionais-e-de-sistema" class="level3">
+<h3>Usuários convencionais e de sistema</h3>
+<p>É o usuário root o responsável por criar usuários no sistema local. Todas as contas de usuário são armazenadas no arquivo de configuração <code>/etc/passwd</code>. O usuário root também pode associar um usuário a um grupo para lhe conferir privilégios extras. Os grupos do sistema e os usuários a eles associados são armazenados no arquivo <code>/etc/group</code>.</p>
+<p>Todo usuário está associado a pelo menos um grupo, chamado seu <em>grupo principal</em>. O grupo principal é único, mas o usuário pode estar associado e diversos outros grupos.</p>
+<p>Cada usuário e grupo possuem um número único associado, chamado respectivamente <em>UID</em> e <em>GID</em>. O único usuário com um número padrão é o root, com número UID 0. Os números de um usuário e de seus grupos podem ser observados com o comando <code>id</code>. Sem argumento, o comando <code>id</code> exibe o número do usuário atual e os grupos aos quais pertence:</p>
+<pre><code>$ id
+uid=13130(lcnsqr) gid=207(bmac) groups=207(bmac)</code></pre>
+<p>Neste exemplo, o número (uid) do usuário <em>lcnsqr</em> é <em>13130</em>, o número de seu grupo principal (<em>bmac</em>) é <em>207</em> e está associado somente a este grupo. Os números são gerados automaticamente, geralmente sendo atribuídos números a partir de 1000 para usuários convencionais.</p>
+<p>Usuários comuns podem executar tarefas normalmente reservadas ao root com o comando <code>sudo</code>. Por exemplo, para utilizar o comando administrativo <code>apt-get dist-upgrade</code> com o <code>sudo</code>:</p>
+<pre><code>$ sudo apt-get dist-upgrade</code></pre>
+<p>O <code>sudo</code> pode ser configurado para restringir diferentes tipos de ação a usuário específicos, solicitando ou não uma senha. Ele também pode ser usado com o comando <code>su</code> para iniciar uma nova sessão do shell como outro usuário, com o comando <code>sudo su usuário</code>, onde <em>usuário</em> é o nome de login do outro usuário. Caso a conta do root tenha uma senha definida, pode ser utilizado o comando <code>su</code> diretamente:</p>
+<pre><code>$ su -</code></pre>
+<p>Nesse caso será necessário fornecer a senha do root para prosseguir.</p>
+<p>Além dos usuários convencionais, existem usuários especiais chamados usuários de sistema. Estes usuários não correspondem a uma pessoa, mas a alguma tarefa do sistema operacional. Essa abordagem oferece uma camada adicional de segurança, pois programas executados por um usuário não podem interferir com arquivos e processos que não lhe pertencem.</p>
+</section>
+<section id="inspeção-de-usuários" class="level3">
+<h3>Inspeção de usuários</h3>
+<p>O usuário root pode interferir em processos de outros usuários e modificar seus arquivos. O root pode até checar quem está usando o sistema com o comando <code>who</code>. Com o comando <code>w</code> o usuário root pode verificar quem está utilizando o sistema e sua atividade no momento.</p>
+<p>O comando <code>lastlog</code> exibe quando foi a última vez que cada usuário entrou no sistema:</p>
+<pre><code>$ lastlog -t 2
+Nome de Usuário         Porta     De             Último
+guilherme        pts/1    143.107.45.1     Qua Fev 27 09:14:45 -0300 2019
+lucas            pts/1    143.107.45.1     Ter Fev 26 10:23:34 -0300 2019
+gustavo          pts/1    143.107.45.1     Ter Fev 26 19:47:28 -0300 2019
+afranio          pts/2    143.107.45.1     Ter Fev 26 19:17:22 -0300 2019
+filipe           pts/1    c-73-208-7-86.hs Ter Fev 26 15:39:21 -0300 2019
+willian          pts/1    179.225.189.179  Qua Fev 27 08:57:10 -0300 2019
+lcnsqr           pts/2    189.79.126.38    Qua Fev 27 09:57:19 -0300 2019</code></pre>
+<p>A opção <code>-t 2</code> foi utilizada para limitar a inspeção aos últimos dois dias. É possível verificar a partir de onde o usuário ingressou no sistema e qual foi a data e hora exatas do login.</p>
+<p>O comando <code>last</code> possui finalidade semelhante, mas exibindo os últimos ingressos de usuários no sistema. Para verificar os últimos ingressos de um usuário específico, basta fornecer seu nome de usuário como argumento:</p>
+<pre><code>$ last lcnsqr
+lcnsqr   pts/2        189.79.126.38    Wed Feb 27 09:57   still logged in   
+lcnsqr   pts/1        189.79.126.38    Tue Feb 26 17:27 - 17:32  (00:04)    
+lcnsqr   pts/1        189.79.126.38    Tue Feb 26 16:29 - 17:15  (00:46)    
+lcnsqr   pts/0        189.79.126.38    Wed Feb 20 16:24 - 16:27  (00:02)    
+lcnsqr   pts/0        189.79.126.38    Wed Feb 20 16:24 - 16:24  (00:00)    
+
+wtmp begins Fri Feb  1 13:48:21 2019</code></pre>
+<p>O comando <code>last reboot</code> mostra quando o sistema foi ligado pela última vez, ou seja, desde quando está ligado. O usuário root pode verificar também se houveram tentativas mal sucedidas de ingresso no sistema com o comando <code>lastb</code>.</p>
+</section>
+</section>
+<section id="criação-de-usuários-e-grupos" class="level2">
+<h2>5.2: Criação de Usuários e Grupos</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>Em ambientes onde mais de uma pessoa utiliza o computador ou utiliza os recursos fornecidos por ele via rede, é muito importante que cada uma delas possua restrições para que não comprometa dados sensíveis, sejam eles pertinentes ao próprio sistema, sejam pertinentes a outros usuários. Para isso, para cada usuário é criada uma conta com a qual ele acessará o sistema.</p>
+<p>Cabe ao usuário root administrar as contas e grupos de usuários. Contudo, o próprio usuário pode modificar alguns aspectos de sua própria conta no sistema.</p>
+<section id="conta-de-usuário" class="level3">
+<h3>Conta de usuário</h3>
+<p>O comando <code>useradd</code> é usado pelo usuário root para criar uma nova conta no sistema. As principais opções do <code>useradd</code> são:</p>
+<ul>
+<li><code>-c comentário</code>: comentário (geralmente o nome completo do usuário).</li>
+<li><code>-d diretório</code>: caminho para o diretório pessoal do usuário.</li>
+<li><code>-g grupo</code>: grupo inicial (GID). Precisa existir previamente n sistema.</li>
+<li><code>-G grupol,grupo2</code>: grupos adicionais, separados por vírgula.</li>
+<li><code>-u UID</code>: UID (User ID) do usuário.</li>
+<li><code>-s shell</code>: Shell padrão para o usuário.</li>
+<li><code>-p senha</code>: senha (entre aspas).</li>
+<li><code>-e data</code>: data de validade da conta.</li>
+<li><code>-k /etc/skel</code>: copia o diretório modelo <code>/etc/skel</code>.</li>
+<li><code>-m</code>: cria o diretório pessoal, se não existir.</li>
+</ul>
+<p>Com a opção <code>-k /etc/skel</code> novos diretórios pessoais podem ser criados a partir de um conteúdo padrão armazenado em <code>/etc/skel</code>. Esse procedimento facilita a criação de várias contas de usuário a partir de um perfil pré-definido.</p>
+<p>Para que o usuário possa acessar sua conta, o administrador precisará definir uma senha para ele. Isso pode ser feito por meio do comando <code>passwd usuário</code>. Usado sem argumentos, <code>passwd</code> altera a senha para o usuário atual, o que pode ser feito por um usuário comum. O <code>passwd</code> também pode ser utilizado pelo usuário root para bloquer a conta de um usuário. Por exemplo, a conta do usuário <em>luciano</em> pode ser bloqueada com o comando <code>passwd -l luciano</code>. A conta poderá ser desbloqueada com o comando <code>passwd -u luciano</code>.</p>
+<p>O campo de descrição pode ser alterado com o comando <code>chfn</code> e o shell principal pode ser alterado com <code>chsh</code>. Usuários comuns podem usar estes comandos para alterar exclusivamente suas próprias contas.</p>
+<p>Uma conta de usuário pode ser apagada com o comando <code>userdel</code>. A opção <code>-r</code> assegura que o diretório pessoal do usuário também seja apagado.</p>
+<p>As informações de conta dos usuários do sistema são armazenadas no arquivo <code>/etc/passwd</code>, no formato:</p>
+<pre><code>root:x:0:0::/root:/bin/bash
+luciano:x:1000:1000:Luciano Antonio Siqueira:/home/luciano:/bin/bash</code></pre>
+<p>Cada usuário é definido em uma linha, em campos separados por “:” representando, respectivamente:</p>
+<ul>
+<li>Nome de Login.</li>
+<li>Senha (“x”quando usando o arquivo <code>/etc/shadow</code>).</li>
+<li>Número de identificação do usuário (UID).</li>
+<li>Número do grupo principal do usuário (GID).</li>
+<li>Descrição do usuário (opcional).</li>
+<li>Diretório pessoal para o usuário.</li>
+<li>Shell inicial do usuário (se vazio, o arquivo padrão <code>/bin/sh</code> será usado).</li>
+</ul>
+<p>Para editar diretamente o arquivo <code>/etc/passwd</code>, é recomendado usar o comando <code>vipw</code>, que bloqueia o arquivo <code>/etc/passwd</code> contra possíveis alterações concorrentes, evitando corrupção do arquivo. A edição será feita com o editor padrão, via de regra o editor <em>vi</em>. Usado com a opção <code>-s</code>, <code>vipw</code> abrirá para edição o arquivo <code>/etc/shadow</code>.</p>
+</section>
+<section id="senhas-shadow" class="level3">
+<h3>Senhas shadow</h3>
+<p>O arquivo <code>/etc/passwd</code> pode ser lido por qualquer usuário, o que pode tornar as senhas criptografadas passíveis de decodificação. Para evitar essa possibilidade, é usado um segundo arquivo, acessível apenas ao usuário root, o arquivo <code>/etc/shadow</code>. As senhas dos usuários são armazenadas num <em>hash</em> criptografado que não pode ser facilmente decodificado.</p>
+<p>Como no arquivo <code>/etc/passwd</code>, os campos no arquivo <code>/etc/shadow</code> são separados por “:”, correspondendo a:</p>
+<ul>
+<li>Nome de usuário, que deve corresponder a um nome válido em <code>/etc/passwd</code>.</li>
+<li>A senha criptografada. Em branco permite login sem senha. Com um asterisco “*” indica que a conta está bloqueada.</li>
+<li>O número de dias (desde 01/01/1970) desde que a senha foi alterada.</li>
+<li>Número mínimo de dias até que uma senha possa ser novamente alterada. O número zero “0” permite alterar a senha sem tempo de espera.</li>
+<li>Número de dias depois dos quais a senha deverá ser alterada. Por padrão, 99999, ou 274 anos.</li>
+<li>Número de dias para informar ao usuário sobre a expiração da senha.</li>
+<li>Número de dias, depois de a senha expirar, até que a conta seja bloqueada.</li>
+<li>O número de dias, a partir de 01/01/1970, desde que a conta foi bloqueada.</li>
+<li>Campo reservado.</li>
+</ul>
+<p>As informações referentes à validade da senha também podem ser modificadas por meio do programa <code>chage</code>, com as seguintes opções:</p>
+<ul>
+<li><code>-m dias</code>: mínimo de dias até que o usuário possa trocar uma senha modificada.</li>
+<li><code>-M dias</code>: número máximo de dias que a senha permanecerá válida.</li>
+<li><code>-d dias</code>: número de dias decorridos em relação a 01/01/1970. Determina quando a senha foi mudada. Também pode ser expresso no formato de data local (dia/mês/ano).</li>
+<li><code>-E dias</code>: número de dias decorridos em relação a 01/01/1970, a partir dos quais a conta não estará mais disponível. Também pode ser expresso no formato de data local (dia/mês/ano).</li>
+<li><code>-I dias</code>: inatividade ou tolerância de dias, após a expiração da senha, para que a conta seja bloqueada.</li>
+<li><code>-W dias</code>: dias anteriores ao fim da validade da senha, quando será emitido um aviso sobre a expiração da validade.</li>
+</ul>
+<p>Para usuários comuns, o <code>chage</code> só pode ser usado com a opção <code>-l usuário</code>, que mostra as restrições referentes ao usuário em questão. O comando <code>usermod</code> agrega as funções de alteração de conta de usuário por meio das opções:</p>
+<ul>
+<li><code>-c descrição</code>: descrição do usuário.</li>
+<li><code>-d diretório</code>: altera diretório do usuário. Com o argumento <code>-m</code>, move o conteúdo do diretório atual para o novo.</li>
+<li><code>-e valor</code>: prazo de validade da conta, especificado no formato <em>dd/mm/aaaa</em>.</li>
+<li><code>-f valor</code>: número de dias, após a senha ter expirado, até que a conta seja bloqueada. Um valor <code>-1</code> cancela essa função.</li>
+<li><code>-g grupo</code>: grupo principal do usuário.</li>
+<li><code>-G grupo1,grupo2</code>: grupos adicionais para o usuário.</li>
+<li><code>-l nome</code>: nome de login do usuário.</li>
+<li><code>-p senha</code>: senha.</li>
+<li><code>-u UID</code>: número de identificação (UID) do usuário.</li>
+<li><code>-s shell</code>: shell padrão do usuário.</li>
+<li><code>-L</code>: bloqueia a conta do usuário, colocando um sinal <strong>!</strong> na frente da senha criptografada. Uma alternativa é substituir o shell padrão do usuário por um script ou programa que informe as razões do bloqueio.</li>
+<li><code>-U</code>: desbloqueia a conta do usuário, retirando o sinal <strong>!</strong> da frente da senha criptografada.</li>
+</ul>
+<p>Os arquivos <code>/etc/passwd</code> e <code>/etc/shadow</code> armazenam somente as informações diretamente relacionadas a cada conta de usuários. Grupos de usuários são configurados em seus próprios arquivos de configuração.</p>
+</section>
+<section id="grupos-de-usuários" class="level3">
+<h3>Grupos de usuários</h3>
+<p>Para criar um grupo de usuários, é usado o comando <code>groupadd</code>:</p>
+<pre><code># groupadd estudo_c</code></pre>
+<p>O número de identificação do grupo (GID) pode ser especificado com a opção <code>-g</code>. Para excluir um grupo, é usado o comando <code>groupdel</code>:</p>
+<pre><code># groupdel estudo_c</code></pre>
+<p>Um usuário poderá ser incluído/excluído de um grupo com o comando <code>gpasswd</code>, utilizando o argumento adequado. As opções mais comuns do <code>gpasswd</code> são:</p>
+<ul>
+<li><code>gpasswd grupo</code>: cria uma senha para grupo.</li>
+<li><code>gpasswd -r grupo</code>: apaga a senha para grupo.</li>
+<li><code>gpasswd -a usuário grupo</code>: associa usuário ao grupo.</li>
+<li><code>gpasswd -d usuário grupo</code>: exclui usuário de grupo.</li>
+<li><code>gpasswd -A usuário grupo</code>: torna um usuário administrador de grupo.</li>
+</ul>
+<p>Um usuário pode pertencer a mais de um grupo, mas apenas um grupo pode ser o principal. Para mostrar os grupos aos quais um usuário pertence, pode ser usado o comando <code>groups usuário</code>. Usado sem argumentos, o comando <code>groups</code> mostra os grupos do usuário atual.</p>
+<p>As informações sobre os grupos existentes no sistema são armazenadas no arquivo <code>/etc/group</code>. Neste arquivo, cada grupo é definido em uma linha, em campos separados por <strong>:</strong>, representando:</p>
+<ul>
+<li>Nome do grupo.</li>
+<li>Senha para o grupo (x se utilizar <code>/etc/gshadow</code>).</li>
+<li>Número de identificação do grupo (GID).</li>
+<li>Lista de membros do grupo, separados por vírgula.</li>
+</ul>
+<p>Para editar diretamente o arquivo <code>/etc/group</code>, é altamente indicado usar o comando <code>vigr</code>, que bloqueia o arquivo <code>/etc/group</code> contra possíveis alterações externas, evitando corrupção do arquivo.</p>
+<p>O comando <code>groupmod</code> agrega algumas funções de alteração de grupos. Suas opções mais comuns são:</p>
+<ul>
+<li><code>-g GID</code>: altera o número (GID) do grupo.</li>
+<li><code>-n nome</code>: altera o nome do grupo.</li>
+</ul>
+<p>A principal finalidade dos grupos é permitir que usuários executem atividades que não são permitidas fora do grupo em questão. Essas atividades estão relacionadas principalmente à leitura e escrita em arquivos e diretórios restritos. Portanto, é importante compreender como funciona o sistema de permissões de arquivos em ambientes Unix.</p>
+</section>
+</section>
+<section id="controle-de-permissões-e-propriedade-de-arquivos" class="level2">
+<h2>5.3: Controle de Permissões e Propriedade de Arquivos</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>Em sistemas de arquivos do padrão Unix, existem regras de permissões que determinam a quem pertence um determinado arquivo ou diretório e quais usuários ou grupos podem utilizá-los. Para arquivos e diretórios há três níveis de permissão:</p>
+<ul>
+<li>Usuário dono do arquivo (<strong>u</strong>).</li>
+<li>Grupo dono do arquivo (<strong>g</strong>).</li>
+<li>Demais usuários – <em>outros</em> – (<strong>o</strong>).</li>
+</ul>
+<p>O diretório <code>/var/run</code> contém arquivos com diferentes tipos de permissões, identificadas na primeira coluna:</p>
+<pre><code>drwx------  2 root           root             40 fev 26 10:08 cryptsetup
+drwxr-xr-x  3 root           lp               80 fev 26 10:08 cups
+srw-rw-rw-  1 root           root              0 fev 26 10:08 .heim_org.h5l.kcm-socket
+drwxrwxr-x  2 lightdm        lightdm          40 fev 26 10:08 lightdm
+drwxr-x---  2 root           root             40 fev 26 10:08 pptp
+-rw-r--r--  1 root           root              4 fev 26 10:08 crond.pid
+drwx------  2 root           root             40 fev 26 10:51 udisks2
+srw-rw-rw-  1 root           root              0 fev 26 10:08 secrets.socket
+drwxr-x---  2 chrony         chrony           80 fev 27 09:00 chrony
+prw-------  1 root           root              0 fev 26 10:08 dmeventd-server
+drwx------  2 rpc            rpc              60 fev 26 10:08 rpcbind
+drwxrwxr-x  2 root           root             40 fev 26 10:08 netreport
+-rw-r--r--  1 root           root              5 fev 27 09:00 dhclient6-enp0s25.pid
+prw-------  1 root           root              0 fev 26 10:08 initctl</code></pre>
+<p>A primeira letra representa o tipo do arquivo, podendo ser:</p>
+<ul>
+<li><code>-</code>: Arquivo convencional.</li>
+<li><code>d</code>: Diretório.</li>
+<li><code>l</code>: Link simbólico.</li>
+<li><code>c</code>: Dispositivo especial de caracteres.</li>
+<li><code>p</code>: Canal <em>fifo</em>.</li>
+<li><code>s</code>: <em>Socket</em>.</li>
+</ul>
+<p>As demais letras são divididas em grupos de três, determinando as permissões para o dono do arquivo, o grupo do arquivo e demais usuários, respectivamente. O arquivo <code>crond.pid</code>, por exemplo, possui permissão <code>rw-</code> para o dono do arquivo (o usuário <em>root</em>), permissão <code>r--</code> para o grupo (o grupo <em>root</em>) e permissão <code>r--</code> para os demais usuários.</p>
+<section id="alterando-permissões" class="level3">
+<h3>Alterando permissões</h3>
+<p>As permissões são alteradas com o comando <code>chmod</code> e podem ser de leitura (<strong>r</strong>), escrita (<strong>w</strong>) e execução (<strong>x</strong>). Por exemplo, o grupo ao qual pertence um arquivo chamado <code>documentos.tar.gz</code> terá apenas acesso de leitura a este e para os demais usuários será retirada a permissão de leitura:</p>
+<pre><code>$ chmod g=r,o-r documentos.tar.gz</code></pre>
+<p>Para incluir permissão de escrita para o grupo do arquivo <code>documentos.tar.gz</code>:</p>
+<pre><code>$ chmod g+w documentos.tar.gz</code></pre>
+<p>Apesar de possuírem o mesmo modelo de permissões, arquivos e diretórios comportam-se de maneiras diferentes tendo as mesmas permissões. Em diretórios, a permissão <strong>r</strong> possibilita ler o conteúdo do diretório, a permissão <strong>w</strong> permite criar arquivos dentro do diretório e <strong>x</strong> permite listar o conteúdo do diretório.</p>
+</section>
+<section id="permissões-numéricas-octais" class="level3">
+<h3>Permissões numéricas (octais)</h3>
+<p>Permissões podem ser manejadas de modo mais sucinto através de um formato numérico, chamado <em>octal</em>. O número octal consiste em uma sequencia de quatro dígitos. O primeiro dígito representa uma permissão especial, abordada adiante. Os demais representam as permissões para o usuário, grupo e outros, nessa ordem.</p>
+<p>Cada dígito indica a presença de uma permissão a partir da soma dos valores 4, 2 e 1. Esses valores correspondem à leitura, escrita e execução. A tabela a seguir mostra todas permissões possíveis, desde 0 (nenhuma permissão) até 7 (todas as permissões).</p>
+<table>
+<tr>
+<td>
+Dígito
+</td>
+<td>
+Leitura (valor 4)
+</td>
+<td>
+Escrita (valor 2)
+</td>
+<td>
+Execução (valor 1)
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+</tr>
+</table>
+<p>Dessa forma, o comando <code>chmod 0664 arquivos.tar.gz</code> mudará as permissões do arquivo <code>documentos.tar.gz</code> para <code>-rw-rw-r--</code>, ou seja, leitura e escrita para o usuário, leitura e escrita para o grupo e somente leitura para os demais.</p>
+<p>Para mudar recursivamente todos os arquivos dentro de um diretório especificado, utiliza-se o <code>chmod</code> com a opção <code>-R</code>.</p>
+</section>
+<section id="modificar-donos-e-grupos-de-arquivos" class="level3">
+<h3>Modificar donos e grupos de arquivos</h3>
+<p>Para alterar dono e grupo de arquivos e diretórios, utiliza-se os comandos <code>chown</code> e <code>chgrp</code>. O primeiro argumento é um nome válido de usuário ou grupo e o segundo é o arquivo ou diretório a ser alterado. Apenas o usuário root pode usar o comando <code>chown</code>, mas qualquer usuário pode usar o comando <code>chgrp</code> em seus arquivos e diretórios, desde que faça parte do grupo que será atribuído.</p>
+<p>Mudar dono de arquivo usando o <code>chown</code>:</p>
+<pre><code># chown luciano documentos.tar.gz</code></pre>
+<p>Mudar grupo de arquivo:</p>
+<pre><code>$ chgrp users documentos.tar.gz</code></pre>
+<p>Para alterar usuário e grupo simultaneamente:</p>
+<pre><code># chown luciano.users documentos.tar.gz</code></pre>
+<p>ou</p>
+<pre><code>chown luciano:users documentos.tar.gz</code></pre>
+<p>Tanto <code>chown</code> quanto <code>chgrp</code> possuem a opção <code>-R</code> para alterar conteúdos de diretórios recursivamente.</p>
+</section>
+</section>
+<section id="arquivos-e-diretórios-especiais" class="level2">
+<h2>5.4: Arquivos e Diretórios Especiais</h2>
+<p><strong>Peso:</strong> 1</p>
+<section id="permissões-suid-e-sgid" class="level3">
+<h3>Permissões suid e sgid</h3>
+<p>Num ambiente Unix, todos os processos são vinculados ao usuário que os iniciou. Dessa forma, o programa herdará as mesmas permissões de leitura e escrita do usuário que o executou. Algumas tarefas, no entanto, exigem que o processo altere ou acesse arquivos para os quais o usuário não tem a permissão necessária. Por exemplo, alterar a própria senha exige que o arquivo <code>/etc/shadow</code> seja alterado, mas as permissões de <code>/etc/shadow</code> limitam a escrita ao usuário dono deste arquivo (o usuário <em>root</em>):</p>
+<pre><code>$ ls -l /etc/shadow
+-rw-r----- 1 root shadow 1172 Mai 15  2017 /etc/shadow</code></pre>
+<p>Para contornar essa condição, existe um tipo de permissão especial, chamada <strong>suid</strong> (<em>set user id</em>). Arquivos executáveis que possuam a permissão suid serão executados com as mesmas permissões do dono do <em>comando</em> e não com as permissões do usuário que o executou. A permissão suid é representada pela letra <strong>s</strong> no lugar do <em>x</em> na porção referente ao dono do arquivo:</p>
+<pre><code>$ ls -l /usr/bin/passwd 
+-rwsr-xr-x 1 root root 54192 Fev 24  2017 /usr/bin/passwd</code></pre>
+<p>Para incluir a permissão suid em um arquivo executável, utiliza-se:</p>
+<pre><code># chmod u+s comando</code></pre>
+<p>De maneira semelhante, a permissão <strong>sgid</strong> atua em diretórios. Ela é uma permissão de grupo, portanto aparece no campo de permissões referente ao grupo. Num diretório com a permissão sgid, todos os arquivos ali criados pertencerão ao grupo do diretório em questão, o que é especialmente útil em diretórios onde trabalham usuários pertencentes ao mesmo grupo.</p>
+<p>Quando ativas, as permissões suid e sgid fazem aparecer a letra <strong>s</strong> no lugar da letra x nas permissões de dono do arquivo e grupo do arquivo, respectivamente. Se a permissão de execução também existir, aparecerá a letra <strong>s</strong> minúscula. Se apenas as permissões suid e sgid existirem, aparecerá a letra <strong>S</strong> maiúscula.</p>
+</section>
+<section id="a-permissão-sticky" class="level3">
+<h3>A permissão sticky</h3>
+<p>O inconveniente em usar diretórios compartilhados é que um usuário poderia apagar algum ou todo o conteúdo inadvertidamente. Para evitar que isso aconteça, existe o a permissão <em>sticky</em>, que impede usuários de apagar arquivos não criados por eles mesmos. É o caso do diretório <code>/tmp</code>, cujas propriedades podem ser verificadas com o comando <code>ls -l</code> mais a opção <code>-d</code>, que permite obter informações do próprio diretório em questão e não de seu conteúdo:</p>
+<pre><code>$ ls -ld /tmp
+drwxrwxrwt 17 root root 36864 Fev 27 11:32 /tmp</code></pre>
+<p>A letra <strong>t</strong> nas permissões para demais usuários demonstra o uso da permissão sticky. Se apenas a permissão sticky existir, aparecerá a letra <strong>T</strong> maiúscula.</p>
+<p>Para atribuir a permissão sticky num diretório chamado <code>trabalho</code>, portanto, pode ser utilizado um comando como <code>chmod o+t trabalho</code>.</p>
+</section>
+<section id="permissões-especiais-em-formato-numérico" class="level3">
+<h3>Permissões especiais em formato numérico</h3>
+<p>Como as opções convencionais, as permissões especiais também podem ser manipuladas em formato octal (numérico). A permissão especial é o primeiro dos quatro dígitos da opção no formato octal. A tabela a seguir detalha essa correspondência.</p>
+<table>
+<tr>
+<td>
+Dígito
+</td>
+<td>
+suid (valor 4)
+</td>
+<td>
+sgid (valor 2)
+</td>
+<td>
+sticky (valor 1)
+</td>
+</tr>
+<tr>
+<td>
+0
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+3
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+4
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+5
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+<td>
+Sim
+</td>
+</tr>
+<tr>
+<td>
+6
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+<td>
+—
+</td>
+</tr>
+<tr>
+<td>
+7
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+<td>
+Sim
+</td>
+</tr>
+</table>
+</section>
+<section id="criar-e-alterar-links-simbólicos-e-hardlinks" class="level3">
+<h3>Criar e alterar links simbólicos e hardlinks</h3>
+<p><em>Links</em> são arquivos especiais que têm finalidade de atalho para outros arquivos, facilitando a maneira como são acessados. Existem dois tipos de links: o <em>softlink</em> (link simbólico) e o <em>hardlink</em> (link físico).</p>
+</section>
+<section id="hardlinks-links-físicos" class="level3">
+<h3>Hardlinks (links físicos)</h3>
+<p>Hardlinks são um ou mais nomes que um <em>inode</em> do sistema de arquivos pode ter. Todo arquivo criado é, necessariamente, um hardlink para seu inode correspondente. Novos hardlinks são criados usando o comando <code>ln</code>:</p>
+<pre><code>$ ln documentos.tar.gz docs.tar.gz</code></pre>
+<blockquote>
+<p><strong>O que é um inode?</strong></p>
+<p>Um inode é o elemento básico que identifica o arquivo no sistema de arquivos. O primeiro inode de um arquivo guarda suas propriedades e indica em quais outros inodes do sistema de arquivos os dados deste arquivo estão localizados.</p>
+</blockquote>
+<p>A opção <code>-i</code> do comando <code>ls</code> mostra o número dos inodes dos arquivos:</p>
+<pre><code>$ ls -i
+6534 documentos.tar.gz  6534 docs.tar.gz</code></pre>
+<p>Ambos <code>documentos.tar.gz</code> e <code>docs.tar.gz</code> são hardlinks para o mesmo inode 6534. Hardlinks para o mesmo inode possuem mesma permissão, donos, tamanho e data, pois esses atributos são registrados diretamente nos inodes.</p>
+<pre><code>$ ls -l documentos.tar.gz
+-rw-r--r-- 2 luciano luciano 188 Oct 16 22:10 documentos.tar.gz</code></pre>
+<p>O número <strong>2</strong> na segunda coluna de informações demonstra que há dois hardlinks para o inode correspondente ao arquivo <code>documentos.tar.gz</code>. Um arquivo só é de fato apagado do sistema de arquivos quando o último hardlink remanescente é excluído.</p>
+<p>Hardlinks só podem ser criados dentro de um mesmo sistema de arquivos. Não é possível criar hardlinks para diretórios. Os arquivos especiais <code>.</code> e <code>..</code> são hardlinks para diretório criados exclusivamente pelo próprio sistema.</p>
+</section>
+<section id="softlinks-links-simbólicos" class="level3">
+<h3>Softlinks (links simbólicos)</h3>
+<p>Links simbólicos podem apontar para qualquer alvo, inclusive em sistemas de arquivos diferentes. Para criar um link simbólico, usa-se <code>ln</code> com a opção <code>-s</code>:</p>
+<pre><code>$ ln -s documentos.tar.gz atalho.tar.gz</code></pre>
+<p>Detalhes do link:</p>
+<pre><code>$ ls -l atalho.tar.gz 
+lrwxrwxrwx 1 lcnsqr bmac 17 Fev 27 11:40 atalho.tar.gz -&gt; documentos.tar.gz</code></pre>
+<p>Um link simbólico é indicado pela letra <code>l</code> no início das permissões que, nesse caso, são sempre <code>rwxrwxrwx</code>. O tamanho do arquivo de link é exatamente a quantidade de bytes (caracteres) do caminho alvo. A seta ao lado do nome do link simbólico indica o caminho até o alvo.</p>
+<p>Um link simbólico para um caminho relativo será quebrado se o alvo ou o próprio link for movido. Um link simbólico para um caminho absoluto só será quebrado se o alvo for movido ou apagado. Para atualizar a informação de alvo de um link simbólico existente, mas “quebrado”, pode-se redefinir o alvo do link com a opção <code>-f</code>.</p>
+<p>Funções comuns para links simbólicos são indicar caminhos longos frequentemente usados, criar nomes mais simples para arquivos executáveis e nomes adicionais para bibliotecas de sistema.</p>
+</section>
+</section>
+</section>
+</body>
+</html>
+

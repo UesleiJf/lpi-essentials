@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:epub="http://www.idpf.org/2007/ops">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <title>Tópico 1: A comunidade Linux e a Carreira Open Source</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" type="text/css" href="../styles/stylesheet1.css" />
+</head>
+<body>
+<section id="tópico-1-a-comunidade-linux-e-a-carreira-open-source" class="level1">
+<h1>Tópico 1: A comunidade Linux e a Carreira Open Source</h1>
+<p><strong>Peso:</strong> 7</p>
+<section id="evolução-do-linux-e-sistemas-operacionais-populares" class="level2">
+<h2>1.1: Evolução do Linux e Sistemas Operacionais Populares</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>O Linux é um sistema operacional de computadores criado no modelo de desenvolvimento de <em>Código Aberto</em>. Apesar do termo ser utilizado para designar todo o conjunto de componentes que formam um sistema operacional, Linux refere-se mais precisamente ao componente central do sistema, denominado <em>kernel</em> (ou <em>núcleo</em>). Seu criador, o programador finlandês Linus Torvalds, publicou a primeira versão do Linux em 5 de outubro de 1991. Sua intenção foi criar um kernel para o <strong>projeto GNU</strong>.</p>
+<blockquote>
+<p><strong>Sistema Operacional</strong></p>
+<p>Um sistema operacional é o conjunto de programas encarregado de controlar os componentes do computador, criando o ambiente no qual os aplicativos utilizados pelo usuário podem funcionar. Sem um sistema operacional, cada aplicativo teria de lidar diretamente com os componentes do computador, o que dificultaria seu desenvolvimento e utilização simultânea (multitarefa).</p>
+</blockquote>
+<section id="projeto-gnu" class="level3">
+<h3>Projeto GNU</h3>
+<p>Em 1983, o programador americano Richard Stallman iniciou o projeto GNU para criar um sistema operacional de código aberto que funcionasse do mesmo modo que o sistema operacional Unix. O Unix foi um sistema que definiu conceitos técnicos utilizados por diversos sistemas operacionais inspirados nele.</p>
+<blockquote>
+<p><strong>Unix</strong></p>
+<p>O Unix original foi desenvolvido na década de 1970 pelos pesquisadores Ken Thompson e Dennis Ritchie (entre outros), no centro de pesquisas Bell Labs da empresa AT&amp;T. O projeto GNU é uma dessas variantes do Unix original, porém com a premissa de ser desenvolvido em Código Aberto.</p>
+</blockquote>
+</section>
+<section id="código-aberto" class="level3">
+<h3>Código Aberto</h3>
+<p>Em seu sentido mais amplo, Código Aberto é um modelo de desenvolvimento que promove:</p>
+<ul>
+<li><p>Acesso universal, via licença livre, ao projeto ou especificação de um produto.</p></li>
+<li><p>Redistribuição universal deste projeto ou especificação, incluindo melhorias feitas posteriormente.</p></li>
+</ul>
+<p>A partir da década de 1990, o projeto GNU – equipado com o kernel Linux – deu origem a inúmeros sistemas operacionais de código aberto, cada um organizando, aprimorando e criando novos programas à sua maneira. Esses sistemas operacionais são chamados <strong>Distribuições Linux</strong>.</p>
+</section>
+<section id="distribuições-linux" class="level3">
+<h3>Distribuições Linux</h3>
+<p>Além de conter o kernel Linux e programas GNU, uma distribuição Linux normalmente agrega outros recursos para tornar sua utilização mais simples. Além de oferecerem um conjunto completo de aplicativos prontos para uso, as distribuições mais populares podem atualizar e instalar novos programas automaticamente. Esse recurso é chamado <strong>gestão de pacotes</strong>. O gestor de pacotes da distribuição elimina o risco de instalar um programa incompatível ou mal intencionado.</p>
+<p>Outra vantagem da distribuições é seu custo. Um usuário experiente pode copiar e instalar legalmente a distribuição sem precisar pagar por isso. Existem distribuições pagas, mas que pouco diferem daquelas sem custo no que diz respeito a facilidade e recursos. As principais distribuições Linux são:</p>
+<ul>
+<li><p><a href="http://www.debian.org">Debian</a>. A principal característica do Debian é seu sistema de gestão de pacotes, o <strong>dpkg</strong>. Os pacotes do dpkg têm o sufixo <code>.deb</code>. <a href="http://www.debian.org/releases/stable/installmanual">Instruções para cópia e instalação</a>.</p></li>
+<li><p><a href="http://centos.org">CentOS</a>. O CentOS é uma versão gratuita da distribuição comercial <a href="http://www.redhat.com/products/enterprise-linux/">Red Hat Enterprise Linux</a>. Seu sistema de pacotes chama-se <strong>RPM</strong>.</p></li>
+</ul>
+<p>Existem muitas outras distribuições importantes além dessas duas, como <a href="http://www.ubuntu.com">Ubuntu</a>, <a href="http://fedoraproject.com">Fedora</a>, <a href="http://www.linuxmint.com">Linux Mint</a>, <a href="http://www.opensuse.org">openSUSE</a>, etc. Apesar de cada distribuição ter suas peculiaridades, um usuário com alguma experiência em Linux será capaz de trabalhar com todas elas. Muitas utilizam o mesmo sistema de gestão de pacotes. Por exemplo, as distribuições Debian, Ubuntu e Linux Mint utilizam o dpkg (essas duas últimas foram criadas a partir da Debian). Já a Red Hat, CentOS e Fedora utilizam RPM. Outras, como a OpenSUSE e Slackware, têm sistemas de gestão de pacotes menos comuns, mas semelhantes ao dpkg e o RPM em sua finalidade.</p>
+<p>Além dessas distribuições de uso geral, existem distribuições voltadas para um público específico. Por exemplo, a <a href="https://www.scientificlinux.org/">Scientific Linux</a> é uma distribuição voltadas para produção científica. A distribuição <a href="https://www.kali.org/">Kali Linux</a> é uma distribuição baseada no Debian especializada em ferramentas de segurança e teste de penetração.</p>
+</section>
+<section id="arquiteturas" class="level3">
+<h3>Arquiteturas</h3>
+<p>Desde a década de 1990, a arquitetura de computadores mais comum é a <strong>x86</strong>, utilizada tanto em servidores quanto em computadores pessoais. Porém, existem muitas outras arquiteturas, e o Linux pode ser instalado na maioria delas.</p>
+<p>Muitas dessas arquiteturas são encontradas em máquinas industriais e até eletrodomésticos. Para esses casos pode ser encontrada ou criada uma versão especializada do Linux, voltada apenas para o equipamento em questão. Esse tipo de sistema recebe o nome de <strong>sistema embarcado</strong>.</p>
+<p>Uma arquitetura que merece destaque é a arquitetura <strong>ARM</strong>, na qual se baseiam praticamente todos os <em>smartphones</em> atuais. O sistema <a href="http://www.android.com/">Android</a>, utilizado em bilhões de aparelhos celulares pelo mundo, é um tipo de Linux. Apesar de haver controvérsia quanto a chamar o Android de distribuição Linux, é inegável que o kernel desse sistema operacional é Linux. Por ter seu código de programação aberto, é até possível utilizar variantes do Android, como o <a href="https://www.lineageos.org/">LineageOS</a>.</p>
+<p>Além de smartphones, outros aparelhos são baseados em arquitetura ARM, como o <a href="https://www.raspberrypi.org/">Raspberry Pi</a>. O Raspberry Pi é basicamente um computador completo reduzido a uma única placa de circuito impresso, com o tamanho ligeiramente maior que um cartão de crédito. Todos os componentes básicos de um computador tradicional estão presentes no Raspberry Pi, como processador, memória, saída de vídeo HDMI, áudio, rede ethernet, WIFI, portas USB, etc. Contudo, o Raspberry Pi não possui uma interface de disco rígido interna <em>IDE</em> ou <em>SATA</em>, de modo que o sistema operacional é armazenado num cartão SD e inserido na entrada presente no aparelho. O Raspberry Pi não é tão potente quanto um computador moderno, mas pode desempenhar muitas das funções menos exigentes.</p>
+<p>Existem muitos modelos de computadores desse tipo, conhecidos como <em>Single Board Computer</em>, ou simplesmente <em>SBC</em>, e quase sempre são equipados com uma distribuição Linux própria para arquitetura ARM. No caso do Raspberry Pi, a distribuição Linux mais utilizada é a <a href="https://raspbian.org/">Raspbian Linux</a>, uma distribuição baseada no Debian e compatível com a arquitetura ARM. Esses dispositivos costumam ser utilizados em aplicações de controle e monitoramento, muitas vezes se comunicando entre si e com um servidor central. Quando essa comunicação se dá via Internet, esse tipo de utilização recebe o nome de <em>Internet das coisas</em> ou simplesmente <strong>IoT</strong>, sigla em inglês de <em>Internet of Things</em>.</p>
+</section>
+<section id="computação-em-nuvem" class="level3">
+<h3>Computação em Nuvem</h3>
+<p>Dada a grande variedade modalidades de troca de informações pela Internet, se tornou mais conveniente do ponto de vista da infraestrutura de comunicação que essas informações utilizadas e geradas por aplicações sejam armazenadas remotamente. A esse tipo de abordagem de distribuição das informações dá-se o nome de <strong>Computação em Nuvem</strong>, pois os recursos podem estar fragmentados em diferentes localidades físicas e não mais num único ponto.</p>
+<p>É comum que a contratação de uma <strong>IaaS</strong> (do inglês <em>Infrasctructure as a Service</em>, <em>Infraestrutura como Serviço</em>) para implementar uma aplicação de grande porte siga o modelo de computação em nuvem. Usando computadores de grande capacidade interligados com Internet de alta velocidade, o provedor da IaaS oferece recursos – como espaço em disco – que podem estar em qualquer uma dessas máquinas separadas geograficamente. Esse modelo permite expandir, reduzir ou criar recursos sob demanda. Os dados também podem estar espelhados em diferentes pontos geográficos para garantir sua segurança e disponibilidade.</p>
+<p>A natureza dinâmica desse tipo de hospedagem não permite que o contratante escolha arbitrariamente o sistema operacional que vai utilizar para implementar o serviço. Uma distribuição Linux, por exemplo, poderá ser instalada a partir de uma lista de opções pré-definidas pelo provedor, que já estão preparadas para operar em sua infraestrutura. O processo de instalação costuma ser feito via navegador, numa área dedicada ao contratante, que escolhe as quantidades e tipos de recursos que vai utilizar. Outra configurações, como restrições de <em>firewall</em> e cópia de chaves <em>SSH</em> também costumam ser feitas nessa mesma interface no navegador. Depois de instalado, o sistema operacional pode ser acessado da mesma maneira que uma máquina remota convencional.</p>
+</section>
+</section>
+<section id="principais-aplicações-open-source" class="level2">
+<h2>1.2: Principais Aplicações Open Source</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>Um aplicativo é um programa cuja finalidade não está diretamente associada com o funcionamento do computador, mas com alguma tarefa de interesse do usuário. As distribuições Linux oferecem diversas opções de aplicativos para as mais diferentes finalidades: aplicativos de escritório, Internet, edição de áudio e vídeo, etc. Sempre há mais de uma opção de aplicativo para uma mesma finalidade, ficando a cargo do usuário escolher a que mais lhe agrada.</p>
+<p>Cada distribuição oferece uma coleção de aplicativos já instalados por padrão. Além desses aplicativos pré-instalados, todas as distribuições populares possuem um gestor de pacotes com uma vasta coleção de aplicativos disponíveis para instalação, chamada <em>repositório de pacotes</em>. Apesar de serem os mesmos programas, cada distribuição possui o próprio sistema de instalação de pacotes. O Debian, Ubuntu e Linux Mint, por exemplo, utilizam as ferramentas <code>dpkg</code> e <code>apt-get</code> para instalar pacotes. Já as distribuições Red Hat, Fedora e CentOS utilizam as ferramentas <code>rpm</code>, <code>yum</code> e <code>dnf</code>. Como o empacotamento dos aplicativos é diferente para cada distribuição, é muito importante instala-los a partir dos repositórios correspondente à distribuição utilizada. O gestor de pacotes da distribuição se encarrega de usar somente os pacotes corretos e fazer as atualizações necessárias, não sendo necessário se preocupar com essas diferenças.</p>
+<section id="aplicativos-de-escritório" class="level3">
+<h3>Aplicativos de Escritório</h3>
+<p>Aplicativos de escritório são editores de texto, de apresentações, planilhas eletrônicas e outros documentos que auxiliam o usuário a realizar seu trabalho. É comum que esses aplicativos estejam agrupados em coleções chamadas suítes de escritório.</p>
+<p>Durante muito tempo, a suíte mais utilizada no Linux foi o pacote <strong>OpenOffice.org</strong>. Após ser transferido para diferentes empresas, o desenvolvimento do OpenOffice.org foi separado em dois projetos distintos: O <em>LibreOffice</em> e o <em>Apache OpenOffice</em>.</p>
+<p>Ambos possuem os mesmos recursos básicos e são compatíveis com os formatos de documentos do <em>Microsoft Office</em>. O LibreOffice mantido pela <strong>Document Foundation</strong> e Apache OpenOffice mantido pela <strong>Apache Software Foundation</strong>. Os aplicativos principais de cada um, separados por finalidade são:</p>
+<ul>
+<li><p><strong>Writer</strong>: Editor de textos.</p></li>
+<li><p><strong>Calc</strong>: Planilha eletrônica.</p></li>
+<li><p><strong>Impress</strong>: Apresentações.</p></li>
+<li><p><strong>Draw</strong>: Desenho vetorial.</p></li>
+<li><p><strong>Math</strong>: Fórmulas matemáticas.</p></li>
+<li><p><strong>Base</strong>: Banco de dados.</p></li>
+</ul>
+<p>Tanto o LibreOffice quanto o Apache OpenOffice são programas de código aberto, sendo a licença do primeiro a <strong>LGPLv3</strong> e, do segundo, a <strong>Apache License 2.0</strong>. A maioria das distribuições Linux adota o LibreOffice por padrão.</p>
+</section>
+<section id="aplicativos-para-web" class="level3">
+<h3>Aplicativos para Web</h3>
+<p>Para grande parte dos usuários, a principal finalidade de um computador é usar Internet. Hoje, as páginas da Internet podem substituir diversos aplicativos, com a vantagem de poderem ser acessadas de qualquer localidade, sem necessidade de instalação de novos programas. Esse fato tornou o navegador no principal aplicativo do sistema operacional.</p>
+<p>Os principais navegadores de Internet no ambiente Linux são o <strong>Google Chrome</strong> e o <strong>Mozilla Firefox</strong>. O Chrome é um navegador fornecido pelo Google, mas é baseado no navegador de código aberto <strong>Chromium</strong>, que pode ser instalado a partir do gestor de pacotes da distribuição e é totalmente compatível com o Chrome. Mantido pela Mozilla, uma fundação sem fins lucrativos, as origens do Firefox remontam ao precursor <strong>Netscape</strong>, tendo sido desenvolvido a partir da liberação do código fonte deste. Desde então, os desenvolvedores do Mozilla Firefox têm participado ativamente do desenvolvimento de padrões abertos e novas tecnologias da Internet, essenciais para a Web moderna.</p>
+<blockquote>
+<p><strong>MDN Web Docs</strong></p>
+<p>Uma das melhores fontes para aprender a desenvolver aplicativos para a Internet é a <a href="https://developer.mozilla.org/pt-BR/"><em>MDN Web Docs</em></a>. Mantido pela Mozilla, o site contém materiais de referência e tutoriais para iniciantes que abrangem todas as tecnologias utilizadas na Web. É fonte de referência para todos os níveis de desenvolvedores.</p>
+</blockquote>
+<p>Além do Firefox, a Mozilla desenvolve outros aplicativos, como o <strong>Thunderbird</strong>, um cliente de email. Com a ascensão do webmail, o uso dos clientes de email declinou, mas muitos optam por utilizá-los devido aos recursos adicionais e integração com outros aplicativos.</p>
+</section>
+<section id="multimídia" class="level3">
+<h3>Multimídia</h3>
+<p>Apesar do avanço das aplicações Web, muitas tarefas ainda demandam aplicativos tradicionais. É o caso das aplicações que manipulam conteúdos multimídia, como imagens, áudio e vídeo.</p>
+<p>Alguns dos aplicativos multimídia de código aberto mais populares são:</p>
+<ul>
+<li><p><strong>Blender</strong>: Para criação de animações 3D. Também pode exportar modelos tridimensionais utilizados por impressoras 3D.</p></li>
+<li><p><strong>Gimp</strong>: Criação e edição de imagens, com muitos recursos. Apesar de sua abordagem ser diferente, pode ser comparado ao programa <em>Adobe Photoshop</em>. O Gimp pode editar a maioria dos arquivos de imagens do tipo <em>bitmap</em>, como <em>JPEG</em>, <em>PNG</em>, <em>GIF</em>, <em>TIFF</em>, etc.</p></li>
+<li><p><strong>Inkscape</strong>: Editor de imagens vetoriais, semelhante ao programa <em>Corel Draw</em>. O Inkscape trabalha com o formato <em>SVG</em>, que é o padrão aberto para gráficos vetoriais e compatível para exibição em navegadores.</p></li>
+<li><p><strong>Audacity</strong>: Edição de áudio. Pode ser utilizado para ouvir e converter diferentes formatos de áudio como MP3, WAV, OGG, etc.</p></li>
+<li><p><strong>ImageMagick</strong>: Converte e edita praticamente todos os formatos de imagem.</p></li>
+</ul>
+<p>Mais do que os editores de mídia, a maioria dos usuários necessita de um bom tocador de música e vídeo. Para vídeo, os mais populares são o <strong>VLC</strong> e o <strong>smplayer</strong>. Para música, há muitas opções, como o <strong>Audacious</strong>, <strong>Banshee</strong> e o <strong>Amarok</strong>.</p>
+</section>
+<section id="programas-para-servidores" class="level3">
+<h3>Programas para Servidores</h3>
+<p>Quando um computador abre uma página de Internet, na verdade faz uma conexão com outro computador e solicita determinadas informações a este. Nesse caso, o primeiro computador é chamado <strong>cliente</strong> e o segundo é chamado <strong>servidor</strong>.</p>
+<p>O computador servidor – que pode ser um equipamento especial ou um computador doméstico – necessita de programas específicos para cada tipo de informação que vai fornecer. No caso de páginas de Internet, a maior parte dos servidores espalhados pelo mundo utiliza programas de código aberto. Esse tipo de servidor é chamado <strong>servidor HTTP</strong> (<em>Hyper Text Transfer Protocol</em>), e os servidores HTTP de código aberto mais populares são o <a href="http://www.apache.org/"><strong>Apache</strong></a>, o <a href="http://nginx.org/"><strong>Nginx</strong></a> e o <a href="http://www.lighttpd.net/"><strong>lighttpd</strong></a>.</p>
+<p>Além de páginas de Internet, programas servidores podem fornecer diversos tipos de informações aos clientes. Também é comum que programas servidores se comuniquem com outros programas servidores. É o caso dos programas servidores HTTP e os programas servidores de <em>banco de dados</em>.</p>
+<blockquote>
+<p><strong>Banco de Dados</strong></p>
+<p>Um banco de dados é um conjunto organizado de informações. Um programa servidor de banco de dados armazena os conteúdos em formatos que permitem consultar, armazenar e relacionar rapidamente um grande volume de informações.</p>
+</blockquote>
+<p>Quando uma página de Internet é acessada, o servidor HTTP identifica qual foi o endereço solicitado, consulta no banco de dados todos os textos, imagens e outras informações relacionadas àquele endereço e envia essas informações de volta para o programa cliente (nesse caso, um navegador como o Firefox). De forma parecida, quando um usuário faz um cadastro na Internet, o servidor HTTP coleta essas informações enviadas pelo cliente e as armazena num banco de dados.</p>
+<p>Os programas servidores de banco de dados de código aberto são muito utilizados, principalmente os chamados bancos de dados relacionais. Tanto na Internet como em outras aplicações, dois dos bancos de dados relacionais mais utilizados são o <a href="http://www.mysql.com/"><strong>MySQL</strong></a> (que vem sendo substituído pelo <a href="https://mariadb.org/"><strong>MariaDB</strong></a>) e o <a href="http://www.postgresql.org/"><strong>PostgreSQL</strong></a>.</p>
+</section>
+<section id="compartilhamento-de-dados" class="level3">
+<h3>Compartilhamento de Dados</h3>
+<p>Existem outros tipos de comunicação entre computadores além do modelo cliente/servidor. Em algumas redes locais, como em escritórios e residências, é conveniente que os computadores hora atuem como servidores, hora atuem como clientes.</p>
+<p>Isso é necessário quando se quer acessar arquivos de um outro computador dentro da rede – por exemplo, entre um computador portátil e um computador de mesa – sem a necessidade de copiar os arquivos para um meio intermediário, como chaveiros USB ou mídias de CD/DVD.</p>
+<p>Entre computadores Linux, costuma-se compartilhar arquivos e espaço em disco com o <strong>NFS</strong> (<em>Network File System</em>). O NFS é o mecanismo de compartilhamento de arquivos padrão em ambientes do tipo Unix.</p>
+<p>Se houverem computadores na rede com outros sistemas operacionais, é mais conveniente utilizar uma comunicação que seja comum a todos. No Linux, isso é conseguido ao utilizar o <a href="https://www.samba.org/"><strong>Samba</strong></a>. Além de poder acessar arquivos ou espaço de ambientes Windows, o Samba pode simular um servidor de arquivos desse tipo, permitindo o compartilhamento para computadores com Windows ou outros computadores Linux com Samba.</p>
+<p>Outros tipos de comunicação entre dois computadores são aquelas que precisam ser intermediadas por um terceiro. É o caso do correio eletrônico (email). Ao enviar um email, a mensagem é armazenada em um servidor até que o usuário destinatário o acesse para ler a mensagem. Esse processo tem a vantagem de dispensar que os computadores remetente e destinatário estejam disponíveis ao mesmo tempo, além de permitir a comunicação entre computadores que não estão diretamente ligados numa mesma rede. O principal programa em código aberto servidor de emails é o <a href="http://www.postfix.org/"><strong>Postfix</strong></a>, um dos mais utilizados no mundo.</p>
+<p>Quando o objetivo é implementar a modalidade de computação em nuvem, que agrega várias funções de armazenamento e compartilhamento remoto, existem opções como o <a href="https://nextcloud.com/"><strong>Nextcloud</strong></a> e o <a href="https://owncloud.org/"><strong>ownCloud</strong></a>. Ambos oferecem soluções semelhantes a serviços como o <em>Google Drive</em> ou o <em>Dropbox</em>. Porém, diferente destes serviços, é possível instalar o Nextcloud e o ownCloud num servidor particular, evitando armazenar dados sensíveis em servidores de terceiros. A instalação é feita sobre um servidor Web convencional, como o Apache. Além do recurso de compartilhamentos de arquivos, eles podem oferecer outros recursos disponíveis na forma de <em>plugins</em> que podem ser ativados ou desativados de acordo com a necessidade.</p>
+<p>Há também programas servidores de muitos outros tipos, cada um para finalidades bastante específicas. Em organizações muitos grandes, pode ser utilizado um servidor que fornece informações para a identificação de funcionários ou contatos de fornecedor. Esse tipo de informação pode ser enviada aos programas clientes por um servidor chamado <strong>OpenLDAP</strong>. O OpenLDAP é um servidor de código aberto para o protocolo chamado <em>Lightweight Directory Access Protocol</em>.</p>
+</section>
+<section id="administração-de-redes" class="level3">
+<h3>Administração de Redes</h3>
+<p>Tanto os programas clientes quanto os programas servidores necessitam que a conexão de rede esteja operando sem problemas. Para isso, existem programas do sistema operacional que atuam no estabelecimento e manutenção da conexão de rede. Dois serviços essenciais para o funcionamento da rede são o <strong>DHCP</strong> – <em>Dynamic Host Configuration Protocol</em> – e o <strong>DNS</strong> – <em>Domain Name Server</em>. O primeiro, DHCP, é o responsável por automaticamente estabelecer a conexão assim que um cabo de rede é inserido ou uma rede sem fio é acessada. O segundo, DNS, é o responsável por traduzir um nome como <em>www.lpi.org</em> para um número de identificação (número IP) que será utilizado pelo cliente para localizar o servidor e estabelecer a conexão.</p>
+</section>
+<section id="linguagens-de-programação" class="level3">
+<h3>Linguagens de Programação</h3>
+<p>Todos os programas, sejam servidores, clientes, aplicativos e o próprio sistema operacional, são feitos utilizando uma ou mais linguagens de programação. Os programas também são arquivos, mas o sistema operacional os trata como uma sequência de instruções e condições que devem ser atendidas pelo processador e demais dispositivos.</p>
+<p>Existem inúmeras linguagens de programação. Umas das maiores virtudes do Linux é oferecer programas para aprender e desenvolver praticamente qualquer linguagem de programação. Algumas das linguagens mais populares são:</p>
+<ul>
+<li><p><strong>JavaScript</strong>: É uma linguagem de programação utilizada principalmente em páginas de Internet. Originalmente, seu propósito era realizar somente tarefas simples, como a validação de formulários antes de enviar as informações para o servidor. Depois de passar por muitos aprimoramentos nas últimas décadas, hoje o JavaScript é considerado uma linguagem de primeira grandeza e é utilizado para criar aplicações extremamente sofisticadas, tanto no ambiente Web quanto em aplicativos móveis e em servidores.</p></li>
+<li><p><strong>C</strong>: A linguagem de programação C está associada aos sistemas Unix, mas pode ser utilizada para escrever programas para quase todo tipo de computador ou dispositivo. As maiores virtudes da linguagem C são sua flexibilidade e desempenho. Tanto supercomputadores de alta capacidade quanto microcontroladores em aparelhos domésticos podem ser programados em linguagem C. Um mesmo programa escrito em linguagem C pode ser compilado em diferentes plataformas, necessitando pouca ou nenhuma alteração. Porém, depois de compilado, o programa só funcionará no sistema operacional e na plataforma para o qual foi compilado.</p></li>
+<li><p><strong>Java</strong>: A maior virtude do Java está em sua portabilidade, o que permite escrever um mesmo programa para ser utilizado em diferentes sistemas operacionais. Apesar do nome, o Java não tem relação com o JavaScript.</p></li>
+<li><p><strong>Perl</strong>: A linguagem Perl é uma linguagem de programação muito utilizada para manipular conteúdos de texto. Com seus recursos de expressões regulares e formatação, é possível tratar textos e gerar relatórios ou outros documentos, como páginas de Internet (HTML).</p></li>
+<li><p><strong>Shell</strong>: O Shell não é apenas uma linguagem de programação, mas um ambiente de interação com o computador. Pela linha de comando do Shell, é possível gerar pequenos programas – <em>scripts</em> – que automatizam tarefas complicadas ou recorrentes.</p></li>
+<li><p><strong>Python</strong>: A linguagem Python é popular entre estudantes e profissionais que não estão diretamente ligados a área de programação. Apesar de possuir recursos avançados, a linguagem Python é um bom começo para quem deseja aprender a programar.</p></li>
+<li><p><strong>PHP</strong>: A linguagem PHP é a mais utilizada em servidores HTTP. A maior parte das páginas disponíveis na Internet não são arquivos armazenados no servidor, mas conteúdos gerados dinamicamente pelo servidor a partir de diversas fontes, como bancos de dados. A linguagem PHP é uma das mais utilizadas para criar os programas que vão coletar informações e gerar os conteúdos das páginas. Da sua associação com um servidor Linux, o programa servidor HTTP Apache e o banco de dados MySQL, surgiu a sigla <strong>LAMP</strong>, <em>Linux</em>, <em>Apache</em>, <em>MySQL</em> e <em>PHP</em>, a combinação de programas mais popular para operar conteúdos da Internet.</p></li>
+</ul>
+<p>Antes de se tornar um programa, todo programa é um arquivo de texto, chamado <strong>código-fonte</strong>. Em <em>linguagens compiladas</em> – como C e Java – o código-fonte precisa ser previamente convertido em um <em>arquivo binário</em> para que possa ser utilizado. Essa operação é feita pelo programa <em>compilador</em>.</p>
+<p>Nas <em>linguagens interpretadas</em> – como JavaScript, Perl, Python e PHP – o programa não precisa ser compilado previamente, tornando mais simples seu desenvolvimento e modificação. Por ser convertido para instruções binárias todas vez que é executado, um programa em linguagem interpretada tende a ser mais lento do que um equivalente em linguagem compilada.</p>
+</section>
+</section>
+<section id="entendendo-o-software-open-source-e-suas-licenças" class="level2">
+<h2>1.3: Entendendo o Software Open Source e suas Licenças</h2>
+<p><strong>Peso:</strong> 1</p>
+<p>O modelo de negócios com programas de código aberto pode despertar algumas dúvidas por ser diferente do modelo de venda de cópias com restrições. Muitos consumidores de programas de computador estão tão habituados com a ideia de comprar uma cópia para poder utilizar um programa que têm dificuldade em entender outras modalidades de comércio.</p>
+<p>Ao comprar uma licença de uso de programas em código fechado (também chamado <em>código proprietário</em>), o usuário tem permissão de utilizar uma cópia do programa mas não tem acesso ao seu código fonte. O fabricante toma essa atitude para inserir mecanismos de proteção contra cópias ilegais e para esconder de seus concorrentes a maneira como seu programa funciona internamente.</p>
+<p>Esse procedimento pode não fazer grande diferença para um usuário comum. Já para uma empresa de tecnologia, um profissional da computação ou um pesquisador, pode trazer grandes prejuízos.</p>
+<p>Defensores do código aberto acreditam ser fundamental que haja acesso universal ao código fonte do programa. Tal como no conhecimento científico, acreditam que o avanço tecnológico é muito maior quando especialistas analisam e confrontam diferentes métodos e abordagens sobre um problema. Além da abertura do código, são formulados padrões abertos para garantir que qualquer interessado com capacidade possa acompanhar, interferir e até criar suas próprias soluções.</p>
+<section id="nomes" class="level3">
+<h3>Nomes</h3>
+<p>Nem todo programa de código aberto é gratuito e nem todo programa gratuito é de código aberto. Os termos <em>Software Livre</em> e <em>Código Aberto</em> são utilizados para designar os programas cujo código fonte pode ser estudado, modificado e compartilhado sem restrições. Em inglês, a ambiguidade do termo <em>Free Software</em> – que pode ser entendido tanto como software livre quanto software gratuito – pode levar a conclusão de que trata-se simplesmente de programas que podem ser obtidos sem custo. Apesar de muitas vezes ser aplicável, essa percepção esconde os aspectos principais do código aberto. Já a expressão código aberto transmite a ideia do acesso ao funcionamento interno, mas não muito sobre sua modificação e compartilhamento.</p>
+<p>Existem outros termos que se pretendem mais didáticos. Da união do termo software livre e código aberto surgiu <strong>FOSS</strong>: <em>Free Open Source Software</em>, ou Programa Livre de Código Aberto. Para reduzir a ambiguidade de <em>free</em>, também é utilizado o termo <strong>FLOSS</strong>: <em>Free/Libre Open Source Software</em>. Este último é mais utilizado quando se quer ressaltar a gratuidade e a liberdade de estudar, modificar e compartilhar. Ao longo de todo esse texto é utilizado o termo <em>código aberto</em> para designar FOSS e FLOSS.</p>
+</section>
+<section id="modelo-de-negócios" class="level3">
+<h3>Modelo de Negócios</h3>
+<p>Se no código aberto não há necessariamente a venda de cópias dos programas compilados, a empresa ou o profissional são remunerados de outras maneiras. Algumas delas são:</p>
+<ul>
+<li><p><em>Financiamento externo</em>. Grandes empresas financiam fundações destinadas a desenvolver e produzir projetos de código aberto. Empresas como <em>Google</em> e <em>IBM</em> dependem de programas de código aberto e por isso os financiam.</p></li>
+<li><p><em>Serviços</em>. Profissionais e empresas costumam vender serviços associados ao código aberto, como suporte técnico, treinamento e consultorias. Empresas locais podem oferecer os mesmos serviços de grandes multinacionais, pois os programas não são exclusivos de nenhuma delas. A <strong>certificação LPI</strong> é um dos instrumentos utilizados por clientes para localizar profissionais qualificados para prestar serviços.</p></li>
+<li><p><em>Assinaturas</em>. Enquanto que o programa é oferecido sem custo, é possível cobrar pela hospedagem e manutenção no servidor. Aplicativos são oferecidos diretamente na Internet e o usuário paga uma taxa para utilizá-lo, o que muitas vezes é mais conveniente do que contratar um servidor e instalar o programa por conta própria.</p></li>
+</ul>
+<p>Além dessas opções, não é impedido a um fornecedor cobrar pela organização e compilação dos programas num CD, por exemplo. Contudo, ele pode estar obrigado a fornecer também os códigos fonte dos programas. Este fator vai ser determinado pelo tipo de licença utilizada pelo programa em questão.</p>
+</section>
+<section id="licenças" class="level3">
+<h3>Licenças</h3>
+<p>Em linhas gerais, um programa de código aberto é aquele que possui código fonte disponível sem restrições. Contudo, há divergências quanto ao que é ou deixa de ser uma restrição. É possível que um programa seja parte fechado e parte aberto? O criador do programa pode impedir que seu código seja utilizado para determinadas finalidades? Essas questões são definidas na licença adotada pelo programa.</p>
+<p>Governos, empresas e usuários precisam ter segurança contratual quanto a tecnologia que adotam. Tanto cliente quanto fornecedor podem sair prejudicados se as regras de aquisição e utilização não estiverem claras. Modos de licenciamento mais antigos não são adequados.</p>
+<p>Uma patente favorece economicamente o criador do programa, mas impede o aprimoramento e compartilhamento da tecnologia. Outras formas de propriedade intelectual, como marcas registradas e <em>copyright</em>, garantem a autoria e estratégias de comercialização, mas por si só não atendem as peculiaridades do código aberto. Licenças específicas foram e ainda são elaboradas para esse novo modelo de produção.</p>
+</section>
+<section id="licenças-gnu" class="level3">
+<h3>Licenças GNU</h3>
+<p>A licença de código aberto mais tradicional é a <strong>GPL</strong>: <em>GNU General Public License</em>. Como o nome implica, essa licença está diretamente relacionada ao projeto GNU, mas pode ser utilizada por qualquer projeto de código aberto. A GPL gira em torno de quatro liberdades principais:</p>
+<ul>
+<li><p>A liberdade de utilizar o programa para qualquer fim.</p></li>
+<li><p>A liberdade de modificar o programa para atender suas necessidades.</p></li>
+<li><p>A liberdade de compartilhar o programa com amigos e vizinhos.</p></li>
+<li><p>A liberdade de compartilhar as modificações realizadas.</p></li>
+</ul>
+<p>A última liberdade está associada ao conceito de <strong>copyleft</strong>. Ou seja, o programa possui <em>copyright</em> <em>inverso</em>. No lugar de limitar o uso do código fonte, o desenvolvedor está liberado a manter o código aberto. Especificamente no caso da licença GPL, o desenvolvedor pode usar e distribuir um software baseado em código GPL somente se esse código modificado também for licenciado sob a GPL. Para a <em>Free Software Foundation</em>, essa característica define se um programa de código aberto pode ser chamado de <em>software livre</em>.</p>
+<blockquote>
+<p><strong>Free Software Foundation</strong></p>
+<p>O projeto GNU e seus subprojetos são mantidos pela <a href="http://www.fsf.org/"><em>Free Software Foundation</em></a>, ou simplesmente FSF. A FSF é uma entidade sem fins lucrativos que promove a liberdade dos usuários de computador e a defesa dos direitos dos usuários de software livre.</p>
+</blockquote>
+<p>A licença GPL completa pode ser obtida em http://www.gnu.org/licenses/gpl.html. A Free Software Foundation também oferece outros tipos de licenças livres:</p>
+<ul>
+<li><p><em>GNU Lesser General Public License (LGPL)</em>: Uma versão menos rigorosa que a GPL. É indicada para bibliotecas – componentes de programas – abertas que pretendem substituir versões proprietárias equivalentes. Um programa proprietário pode utilizar uma biblioteca LGPL sem necessidade de tornar-se código aberto ou livre.</p></li>
+<li><p><em>GNU Affero General Public License (AGPL)</em>: Em contextos onde o programa não é fornecido da maneira tradicional, como em sistemas na Internet, a licença AGPL garante o acesso ao seu código.</p></li>
+<li><p><em>GNU Free Documentation License (FDL)</em>: Destinada para conteúdos de manuais e livros. Assim como no caso dos programas, essa licença garante a cópia, redistribuição com ou sem modificações, comercialmente ou não.</p></li>
+</ul>
+<p>As licenças GNU não são as únicas licenças de código aberto. Como a Free Software Foundation, a <a href="http://opensource.org/">Open Source Initiative</a> é uma entidade sem fins lucrativos que promove a difusão do código aberto. Enquanto a FSF é menos flexível quanto ao conceito de código livre e publica sua própria licença, a Open Source Initiative procura difundir todas as modalidades de programas não proprietários.</p>
+</section>
+<section id="open-source-initiative" class="level3">
+<h3>Open Source Initiative</h3>
+<p>A principal finalidade da <a href="http://opensource.org/">Open Source Initiative</a> (ou simplesmente OSI) é publicar a definição formal do que é código aberto. Resumidamente, código aberto é o código fonte que pode ser <em>utilizado</em>, <em>modificado</em> e <em>compartilhado</em> sem restrições. A OSI não publica licenças, mas avalia licenças disponíveis e as aprova ou desaprova como licenças de código aberto. Segundo a OSI, a própria GPL é uma licença genuinamente de código aberto.</p>
+<p>Para uma licença ser aprovada pela OSI, ela deve atender aos critérios específicos da definição de código aberto mantida pela OSI. São eles:</p>
+<ol type="1">
+<li><p><em>Distribuição Livre</em>. A licença não poderá restringir nenhuma das partes de vender ou dar o programa como um componente de uma seleção de programas de diferentes fontes. A licença não pode exigir pagamento de <em>royalty</em> ou outra taxa pela venda.</p></li>
+<li><p><em>Código Fonte</em>. O programa precisa incluir o código fonte, e precisa permitir a distribuição tanto em código fonte quanto em formato compilado. Quando o código fonte não acompanhar o produto, será necessário existirem meios suficientemente divulgados para obter o código fonte, preferivelmente a cobrar não mais que seu custo de reprodução ou copiando via Internet sem custo adicional.</p></li>
+<li><p><em>Trabalhos Derivados</em>. A licença deve permitir modificações e trabalhos derivados, e precisa permitir que estes sejam distribuídos sob os mesmos termos da licença original</p></li>
+<li><p><em>Integridade do Código Fonte do Autor</em>. A licença pode impedir a distribuição do código fonte modificado <em>apenas</em> se permitir a distribuição de emendas (<em>patch files</em>) com a finalidade de modificar o programa durante a compilação. A licença deve permitir explicitamente a distribuição de programas compilados a partir do código fonte modificado. A licença pode exigir que trabalhos derivados tenham um nome ou versão diferentes do original.</p></li>
+<li><p><em>Nenhuma Discriminação Contra Pessoas ou Grupos</em>. A licença não pode discriminar nenhuma pessoa ou grupo de pessoas.</p></li>
+<li><p><em>Nenhuma Discriminação Contra Campos de Atuação</em>. A licença não pode impedir o uso do programa em determinados campos de atuação. Por exemplo, ela não pode impedir que o programa seja utilizado em um negócio ou em pesquisas genéticas.</p></li>
+<li><p><em>Distribuição da Licença</em>. As regras anexadas ao programa se aplicam a quem o programa for redistribuído, sem necessidade de utilizar uma licença adicional para essas partes.</p></li>
+<li><p><em>A Licença não Pode Ser Específica a um Produto</em>. As regras atribuídas ao programa não podem depender de seu vínculo a uma distribuição em particular. Se o programa é extraído da distribuição e utilizado ou distribuído dentro dos termos de sua licença, todas as partes a quem o programa é redistribuído possuirão os mesmo direitos da licença original do programa.</p></li>
+<li><p><em>A Licença Não Pode Restringir Outro Programa</em>. A licença não pode impor restrições a outros programas distribuídos com o programa licenciado. Por exemplo, a licença não pode exigir que todos os programas distribuídos na mesma mídia sejam de código aberto.</p></li>
+<li><p><em>A Licença Precisa Ser Tecnologicamente Neutra</em>. Nenhuma disposição da licença pode estar associado a uma tecnologia em particular ou modalidade de interface.</p></li>
+</ol>
+<p>Esses são os critérios para uma licença ser chamada de código aberto. Portanto, nem todo programa que oferece algum tipo de acesso ao seu código fonte pode ser chamado de código aberto. Existem muitas licenças aprovadas, dentre as quais destacam-se:</p>
+<ul>
+<li><p><em>Apache License 2.0</em></p></li>
+<li><p><em>BSD 3-Clause </em>New* or <em>Revised</em> license*</p></li>
+<li><p><em>BSD 2-Clause </em>Simplified* or <em>FreeBSD</em> license*</p></li>
+<li><p><em>GNU General Public License (GPL)</em></p></li>
+<li><p><em>GNU Library or </em>Lesser* General Public License (LGPL)*</p></li>
+<li><p><em>MIT license</em></p></li>
+<li><p><em>Mozilla Public License 2.0</em></p></li>
+<li><p><em>Common Development and Distribution License</em></p></li>
+<li><p><em>Eclipse Public License</em></p></li>
+</ul>
+<p>Enquanto que algumas licenças, como a GPL, proíbem que o programa seja modificado e redistribuído sem que o usuário tenha acesso ao código fonte, outras não são tão rigorosas. Um programa com a licença BSD, por exemplo, poderá ser modificado e redistribuído sem o código fonte, desde que a licença BSD original seja abandonada.</p>
+<p>Todas as licenças de código aberto aprovadas pela Open Source Initiative podem ser consultadas em http://opensource.org/licenses.</p>
+</section>
+<section id="outras-licenças" class="level3">
+<h3>Outras Licenças</h3>
+<p>A cultura do trabalho colaborativo se expandiu para além do desenvolvimento tecnológico. Hoje, é comum que textos originais, obras de arte e outros trabalhos sejam publicados com licenças livres. Destacam-se as licenças <a href="http://creativecommons.org/"><em>Creative Commons</em></a>, que permitem ao autor decidir de que maneira sua obra poderá ser utilizada, se poderá ser modificada e compartilhada.</p>
+</section>
+</section>
+<section id="habilidades-em-tic-e-trabalhando-no-linux" class="level2">
+<h2>1.4: Habilidades em TIC e Trabalhando no Linux</h2>
+<p><strong>Peso:</strong> 2</p>
+<p>A menos que se viva em uma comunidade extremamente isolada, a Tecnologia da Informação e Comunicação – <strong>TIC</strong> – está presente em todos os aspectos da vida de uma pessoa. Do lazer ao trabalho, é difícil localizar uma atividade que não envolva direta ou indiretamente o uso de um recurso computacional.</p>
+<p>Sendo irrevogável a presença da tecnologia, é importante conhecer mais sobre ela. Se essa recomendação é válida para qualquer pessoa, torna-se uma exigência quando se trata de um profissional de TIC.</p>
+<section id="o-computador" class="level3">
+<h3>O Computador</h3>
+<p>Apesar da tecnologia estar tão próxima, sua complexidade e diversidade pode tornar difícil a compreensão de conceitos importantes. O próprio conceito de computador passou por muitas transformações ao longo de décadas. No início do século XX, o computador era a pessoa encarregada de calcular e revisar longas séries de operações matemáticas, para os mais diversos fins. Nessa época, o matemático inglês <strong>Alan Turing</strong> desenvolveu a ideia de uma máquina que poderia executar o trabalho de um computador.</p>
+<p>O conceito, de maneira simplificada, propunha a ideia de uma máquina capaz de ler os valores e as operações a serem realizadas com eles. Esses valores e operações seriam armazenados sequencialmente, como furos numa fita. Os furos e a ausência deles formariam um padrão binário de representação numérica, capacitando o computador a lidar com toda informação que possa ser expressa numericamente.</p>
+<p>A agulha que lê os valores e operações a partir dos furos na fita é responsável por mudar a operação e copiar os valores para os registradores do processador, que efetua a operação. O resultado da operação é armazenado como furos no próximo espaço vazio da fita, que por sua vez poderá ser utilizado numa nova operação.</p>
+<p>Tal conceito pode ser aplicado num mecanismo meramente mecânico, mas a medida que a complexidade aumenta, sua construção torna-se inviável. O avanço da eletrônica e dos <em>chips</em> – minúsculos conjuntos de transistores utilizados para realizar operações lógicas – tornou possível o desenvolvimento de processadores muito complexos e velozes. Outros dispositivos eletrônicos, como memórias RAM e discos rígidos, exercem a função da fita perfurada. O conceito da máquina de Turing permanece o mesmo nos computadores modernos, agora operando com sinais eletrônicos e meios magnéticos e óticos.</p>
+<p>O inconveniente é que, à medida em que se aumenta a versatilidade e componentes do computador, mais complexa se torna sua operação. Por isso também é importante a elaboração de meios que tornem essa operação mais acessível.</p>
+</section>
+<section id="computação-pessoal" class="level3">
+<h3>Computação Pessoal</h3>
+<p>Durante muito tempo, computadores eram restritos à grandes empresas e instituições de pesquisa. A partir do final dos anos 1970, equipamentos domésticos passaram a ser fabricados e surgiu o usuário comum.</p>
+<p>O usuário comum, apesar de não compreender o funcionamento de um computador em sua totalidade, é capaz de interagir com ele se existir um conjunto simplificado de instruções de operações.</p>
+</section>
+<section id="interagindo-com-o-computador" class="level3">
+<h3>Interagindo com o computador</h3>
+<p>Esse conjunto simplificado de instruções é a chamada <em>interface computador/usuário</em> ou simplesmente <em>interface</em>. A interface traduz a solicitação feita pelo usuário ao computador, que por sua vez gera informações que serão traduzidas pela interface para serem apresentadas ao usuário.</p>
+<p>Existem muitos tipos de interface de usuário. Em uma de suas formas mais simples, a entrada de informações pode ser feita por um painel com alguns botões e o resultado da computação ser exibido com luzes piscantes. Em contrapartida, já são comuns interfaces que identificam o movimentos sutis do usuário e exibem sofisticadas imagens em telas de alta resolução.</p>
+<p>Das muitas interfaces já criadas, talvez a mais consolidada seja a interface de texto. Apesar de muitos usuários estarem mais acostumados a utilizar um apontador controlado por um <em>mouse</em> sobre ilustrações exibidas na tela, a interface de texto é a muito utilizada por profissionais do universo Unix e outros sistemas operacionais.</p>
+</section>
+<section id="terminal" class="level3">
+<h3>Terminal</h3>
+<p>A interface de texto é chamada <strong>terminal</strong> ou <strong>console</strong>. Estes nomes vêm da época em que era utilizado um equipamento chamado terminal, que era conectado ao computador para operá-lo. O console era uma tela simples que exibia informações de texto sobre o computador. Também é comum se referir à interface de texto como <strong>linha de comando</strong>.</p>
+<p>Hoje, existe um programa chamado <em>emulador de terminal</em> que pode ser utilizado para trabalhar linha de comando. Os diferentes ambientes de desktop gráfico oferecem várias opções de emulador de terminal, como o <em>Konsole</em>, o <em>Terminal do Gnome</em> ou o <em>xterm</em>. Outra possibilidade é alternar para o console de texto que permite fazer login para a linha de comando, usando a combinação de teclas <strong>Ctrl + Alt + F2</strong>. A principal vantagem da linha de comando é sua simplicidade e versatilidade. Também são mais simples da perspectiva do uso dos recursos de hardware, pois é necessário muito menos níveis de tradução entre os comandos de texto e as instruções compreendidas pelo computador. Mesmo que a princípio pareça contraditório, a linha de comando pode ser mais versátil que um aplicativo gráfico. Os comandos podem ser combinados entre si, permitindo um controle apurado e produção de resultados elaborados.</p>
+<p>Essas características tornam a linha de comando uma boa interface para um usuário profissional. Enquanto uma interface gráfica exige uma série de programas adicionais e equipamentos mais complexos, o console é parte de todo sistema operacional Unix e pode ser utilizado mesmo quando uma interface gráfica não está disponível.</p>
+<p>Contudo, existem tarefas onde aplicativos em interfaces gráficas são mais apropriados. É o caso do navegador de Internet, que hoje é uma das principais interfaces de operação de um computador. As páginas de Internet muitas vezes funcionam como aplicativos, num ambiente chamado <em>Plataforma Web</em>.</p>
+</section>
+<section id="a-plataforma-web" class="level3">
+<h3>A plataforma Web</h3>
+<p>Muitas atividades pessoais e profissionais são desempenhadas no navegador. Apesar da praticidade, alguns cuidados devem ser tomados quando utilizando este ambiente. Os principais navegadores oferecem recursos para preservar a segurança e privacidade do usuário.</p>
+<section id="segurança" class="level4">
+<h4>Segurança</h4>
+<p>Ao utilizar qualquer tipo de comunicação em rede, sempre existe a possibilidade de que a informação transmitida e recebida esteja sendo interceptada. Para evitar que um interceptador possa ler as informações, é importante verificar se o protocolo <strong>HTTPS</strong> está sendo utilizado pelo navegador. Sempre que informações sensíveis, como senhas e outros dados pessoais, estejam sendo transmitidas, o termo <strong>https://</strong> deve aparecer ao lado do endereço da página. Assim, as informações serão criptografadas e apenas a origem e o destino da comunicação serão capazes de ler as informações.</p>
+<p>A criptografia praticamente elimina a possibilidade de uma senha ou qualquer outra informação sensível ser interceptada. Mesmo assim, existe a possibilidade de senhas serem roubadas pela quebra de algoritmos defasados ou pelo armazenamento incorreto das senhas no provedor de serviços. Para mitigar o dano em caso de roubo de senhas, é recomendável usar uma senha diferente em cada serviço. Desse modo, a senha roubada poderá ser utilizada somente na conta comprometida. O gerenciador de senhas presente nos navegadores modernos armazenam as diferentes senhas de modo seguro, mas é muito importante que a senha mestra desses gerenciadores seja forte, de preferência maiores que 15 caracteres, contendo letras, números e outros símbolos e não sejam compartilhadas ou armazenadas em nenhum meio inseguro.</p>
+</section>
+<section id="privacidade" class="level4">
+<h4>Privacidade</h4>
+<p>Além dos ataques por interceptação, é possível que outra pessoa com acesso ao computador possam obter as informações de outros usuários que utilizaram o navegador. Para evitar que o navegador preserve informações como dados pessoais, senhas, histórico de visitas, etc, recomenda-se utilizar o <em>modo de navegação privativo</em>. Este recurso, disponível em todos os navegadores modernos, é indispensável quando se utiliza um computador de outra pessoa ou de uso público.</p>
+<p>As janelas no modo privativo também não armazenam <em>cookies</em> de maneira persistente. Os cookies são pequenos marcadores que o servidor Web usa para identificar cada navegador individualmente. Enquanto que cookies são úteis para certos fins, como preservar uma cesta de compras numa loja online ou armazenar preferências do usuário, eles também podem ser usados para identificar e monitorar o usuário sem o seu consentimento.</p>
+<p>Para além da computação pessoal, outros conceitos relativos às Tecnologias da Informação e Comunicação devem ser considerados por um profissional da área. Anterior à computação pessoal, a computação corporativa possui características próprias e exige mais conhecimento.</p>
+</section>
+</section>
+<section id="computação-corporativa" class="level3">
+<h3>Computação corporativa</h3>
+<p>Para um profissional de TIC, não basta escolher os equipamentos e programas que atendem às suas necessidades pessoais, mas aqueles que atendem às necessidades de sua atividade profissional ou da empresa para qual trabalha.</p>
+<p>Num computador pessoal, além de ser desejável que os equipamentos e programas não apresentem falhas, também é desejável que estejam atualizados com os recursos mais recentes. Distribuições como a <em>Linux Mint</em> e <em>Fedora</em> procuram oferecer as versões mais recentes dos programas em seus pacotes. Contudo, muitos dos recursos mais recentes não foram exaustivamente testados, e podem causar alguma instabilidade que será corrigida tão logo seja detectada.</p>
+<p>Num computador de uso corporativo, também é desejado que estejam presentes os recursos mais recentes. Contudo, instabilidades devem ser completamente rechaçadas. Por exemplo, uma instabilidade que torne um servidor inacessível, mesmo que por alguns instantes, pode causar grandes prejuízos.</p>
+<p>É para esse tipo de uso que existem as chamadas <em>distribuições corporativas</em>. Nessas distribuições, como <em>Debian</em>, <em>CentOS</em> e <em>Ubuntu Server</em>, há somente programas exaustivamente testados, o que praticamente elimina a ocorrência de falhas.</p>
+<p>Além da possibilidade de implementar uma solução interna para as necessidades da corporação ou entidade, o profissional de TIC pode transferir o ônus de operar a infraestrutura de TI para um provedor externo, que muito provavelmente empregará as mesmas distribuições corporativas que seriam utilizadas internamente, porém em seus próprios servidores remotos. Estes equipamentos são, via de regra, mais eficientes do que aqueles que uma empresa de pequeno e médio porte poderia manter. Esse tipo de provedor de serviços de TIC, muitas vezes denominado <em>provedor de nuvem</em>, costuma oferecer diferentes níveis de serviços:</p>
+<ul>
+<li><p><strong>IaaS</strong>: <em>Infrastructure as a Service</em>, Infraestrutura como serviço. O provedor é responsável por oferecer o hardware e a conectividade de rede, cabendo ao contratante a administração do sistema operacional.</p></li>
+<li><p><strong>PaaS</strong>: <em>Platform as a Service</em>, Plataforma como serviço. O provedor oferece um ambiente de desenvolvimento e implementação já preparado, onde o contratante já tem a disposição os servidores Web e de banco de dados, por exemplo.</p></li>
+<li><p><strong>SaaS</strong>: <em>Software as a Service</em>, Software como serviço. A aplicação final é fornecida pelo provedor, bastando ao contratante apenas utilizar a aplicação pronta. É o caso de serviços como <em>webmail</em> corporativo e <em>groupwares</em> colaborativos.</p></li>
+</ul>
+<p>Uma das vantagens que um provedor de nuvem oferece é a escalabilidade sob demanda do serviço. Diante da necessidade, é possível solicitar ao provedor que aumente ou reduza a capacidade contratada. Isso é possível pois os serviços em nuvem costumam utilizar tecnologias de <em>virtualização</em> que permitem a alocação dinâmica de recursos. Muitos dos provedores de nuvem empregam tecnologias de virtualização oferecidas pelo próprio Linux, como o <strong>KVM</strong> ou <strong>Xen</strong>.</p>
+<blockquote>
+<p><strong>Virtualização</strong></p>
+<p>Virtualização é a capacidade de executar simultaneamente mais de um sistema operacional num mesmo computador. Esse recurso possibilita um melhor aproveitamento dos recursos de hardware em máquinas de grande porte. Mesmo que estejam rodando na mesma máquina, sistemas virtualizados são completamente independentes entre si e têm as mesmas finalidades e modos de utilização de um sistema tradicional não virtualizado.</p>
+</blockquote>
+<p>As soluções de código aberto são muito diversas e versáteis, mas podem não ser a resposta para todos as questões. Certas necessidades demandam sistemas operacionais ou programas proprietários, que não possuem equivalente em código aberto. A ausência de pagamento pelo programa não implica que não haverão outros custos. Além do custo da implementação, é provável que será necessário contratar suporte, manutenção e treinamento. Somente um estudo de cada caso pode definir a opção mais adequada.</p>
+</section>
+</section>
+</section>
+</body>
+</html>
+
