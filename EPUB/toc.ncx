@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="urn:uuid:c47ccc6d-a329-43ad-a499-a06df27c963f" />
+    <meta name="dtb:depth" content="1" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+    <meta name="cover" content="cover_png" />
+  </head>
+  <docTitle>
+    <text>Certificação Linux Essentials</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-0">
+      <navLabel>
+        <text>Certificação Linux Essentials</text>
+      </navLabel>
+      <content src="text/title_page.xhtml" />
+    </navPoint>
+    <navPoint id="navPoint-1">
+      <navLabel>
+        <text>Aviso Legal</text>
+      </navLabel>
+      <content src="text/ch001.xhtml#aviso-legal" />
+    </navPoint>
+    <navPoint id="navPoint-2">
+      <navLabel>
+        <text>Sobre o autor</text>
+      </navLabel>
+      <content src="text/ch002.xhtml#sobre-o-autor" />
+    </navPoint>
+    <navPoint id="navPoint-3">
+      <navLabel>
+        <text>Introdução</text>
+      </navLabel>
+      <content src="text/ch003.xhtml#introdução" />
+    </navPoint>
+    <navPoint id="navPoint-4">
+      <navLabel>
+        <text>Atualizações</text>
+      </navLabel>
+      <content src="text/ch004.xhtml#atualizações" />
+    </navPoint>
+    <navPoint id="navPoint-5">
+      <navLabel>
+        <text>Tópico 1: A comunidade Linux e a Carreira Open Source</text>
+      </navLabel>
+      <content src="text/ch005.xhtml#tópico-1-a-comunidade-linux-e-a-carreira-open-source" />
+      <navPoint id="navPoint-6">
+        <navLabel>
+          <text>1.1: Evolução do Linux e Sistemas Operacionais Populares</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#evolução-do-linux-e-sistemas-operacionais-populares" />
+        <navPoint id="navPoint-7">
+          <navLabel>
+            <text>Projeto GNU</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#projeto-gnu" />
+        </navPoint>
+        <navPoint id="navPoint-8">
+          <navLabel>
+            <text>Código Aberto</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#código-aberto" />
+        </navPoint>
+        <navPoint id="navPoint-9">
+          <navLabel>
+            <text>Distribuições Linux</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#distribuições-linux" />
+        </navPoint>
+        <navPoint id="navPoint-10">
+          <navLabel>
+            <text>Arquiteturas</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#arquiteturas" />
+        </navPoint>
+        <navPoint id="navPoint-11">
+          <navLabel>
+            <text>Computação em Nuvem</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#computação-em-nuvem" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-12">
+        <navLabel>
+          <text>1.2: Principais Aplicações Open Source</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#principais-aplicações-open-source" />
+        <navPoint id="navPoint-13">
+          <navLabel>
+            <text>Aplicativos de Escritório</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#aplicativos-de-escritório" />
+        </navPoint>
+        <navPoint id="navPoint-14">
+          <navLabel>
+            <text>Aplicativos para Web</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#aplicativos-para-web" />
+        </navPoint>
+        <navPoint id="navPoint-15">
+          <navLabel>
+            <text>Multimídia</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#multimídia" />
+        </navPoint>
+        <navPoint id="navPoint-16">
+          <navLabel>
+            <text>Programas para Servidores</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#programas-para-servidores" />
+        </navPoint>
+        <navPoint id="navPoint-17">
+          <navLabel>
+            <text>Compartilhamento de Dados</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#compartilhamento-de-dados" />
+        </navPoint>
+        <navPoint id="navPoint-18">
+          <navLabel>
+            <text>Administração de Redes</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#administração-de-redes" />
+        </navPoint>
+        <navPoint id="navPoint-19">
+          <navLabel>
+            <text>Linguagens de Programação</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#linguagens-de-programação" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-20">
+        <navLabel>
+          <text>1.3: Entendendo o Software Open Source e suas Licenças</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#entendendo-o-software-open-source-e-suas-licenças" />
+        <navPoint id="navPoint-21">
+          <navLabel>
+            <text>Nomes</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#nomes" />
+        </navPoint>
+        <navPoint id="navPoint-22">
+          <navLabel>
+            <text>Modelo de Negócios</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#modelo-de-negócios" />
+        </navPoint>
+        <navPoint id="navPoint-23">
+          <navLabel>
+            <text>Licenças</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#licenças" />
+        </navPoint>
+        <navPoint id="navPoint-24">
+          <navLabel>
+            <text>Licenças GNU</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#licenças-gnu" />
+        </navPoint>
+        <navPoint id="navPoint-25">
+          <navLabel>
+            <text>Open Source Initiative</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#open-source-initiative" />
+        </navPoint>
+        <navPoint id="navPoint-26">
+          <navLabel>
+            <text>Outras Licenças</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#outras-licenças" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-27">
+        <navLabel>
+          <text>1.4: Habilidades em TIC e Trabalhando no Linux</text>
+        </navLabel>
+        <content src="text/ch005.xhtml#habilidades-em-tic-e-trabalhando-no-linux" />
+        <navPoint id="navPoint-28">
+          <navLabel>
+            <text>O Computador</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#o-computador" />
+        </navPoint>
+        <navPoint id="navPoint-29">
+          <navLabel>
+            <text>Computação Pessoal</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#computação-pessoal" />
+        </navPoint>
+        <navPoint id="navPoint-30">
+          <navLabel>
+            <text>Interagindo com o computador</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#interagindo-com-o-computador" />
+        </navPoint>
+        <navPoint id="navPoint-31">
+          <navLabel>
+            <text>Terminal</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#terminal" />
+        </navPoint>
+        <navPoint id="navPoint-32">
+          <navLabel>
+            <text>A plataforma Web</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#a-plataforma-web" />
+        </navPoint>
+        <navPoint id="navPoint-33">
+          <navLabel>
+            <text>Computação corporativa</text>
+          </navLabel>
+          <content src="text/ch005.xhtml#computação-corporativa" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-34">
+      <navLabel>
+        <text>Tópico 2: Localizar-se num Sistema Linux</text>
+      </navLabel>
+      <content src="text/ch006.xhtml#tópico-2-localizar-se-num-sistema-linux" />
+      <navPoint id="navPoint-35">
+        <navLabel>
+          <text>2.1: O Básico da Linha de Comando</text>
+        </navLabel>
+        <content src="text/ch006.xhtml#o-básico-da-linha-de-comando" />
+        <navPoint id="navPoint-36">
+          <navLabel>
+            <text>O shell Bash</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#o-shell-bash" />
+        </navPoint>
+        <navPoint id="navPoint-37">
+          <navLabel>
+            <text>Variáveis</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#variáveis" />
+        </navPoint>
+        <navPoint id="navPoint-38">
+          <navLabel>
+            <text>Substituição de comandos</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#substituição-de-comandos" />
+        </navPoint>
+        <navPoint id="navPoint-39">
+          <navLabel>
+            <text>Englobamento</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#englobamento" />
+        </navPoint>
+        <navPoint id="navPoint-40">
+          <navLabel>
+            <text>Comandos sequenciais</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#comandos-sequenciais" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-41">
+        <navLabel>
+          <text>2.2: Utilizando a Linha de Comando para Obter Ajuda</text>
+        </navLabel>
+        <content src="text/ch006.xhtml#utilizando-a-linha-de-comando-para-obter-ajuda" />
+        <navPoint id="navPoint-42">
+          <navLabel>
+            <text>Outras documentações</text>
+          </navLabel>
+          <content src="text/ch006.xhtml#outras-documentações" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-43">
+        <navLabel>
+          <text>2.3: Utilizando Diretórios e Listando Arquivos</text>
+        </navLabel>
+        <content src="text/ch006.xhtml#utilizando-diretórios-e-listando-arquivos" />
+      </navPoint>
+      <navPoint id="navPoint-44">
+        <navLabel>
+          <text>2.4: Criar, mover e apagar arquivos</text>
+        </navLabel>
+        <content src="text/ch006.xhtml#criar-mover-e-apagar-arquivos" />
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-45">
+      <navLabel>
+        <text>Tópico 3: O Poder da Linha de Comando</text>
+      </navLabel>
+      <content src="text/ch007.xhtml#tópico-3-o-poder-da-linha-de-comando" />
+      <navPoint id="navPoint-46">
+        <navLabel>
+          <text>3.1: Armazenamento de arquivos na linha de comando</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#armazenamento-de-arquivos-na-linha-de-comando" />
+        <navPoint id="navPoint-47">
+          <navLabel>
+            <text>Utilizando o tar</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#utilizando-o-tar" />
+        </navPoint>
+        <navPoint id="navPoint-48">
+          <navLabel>
+            <text>Compressão</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#compressão" />
+        </navPoint>
+        <navPoint id="navPoint-49">
+          <navLabel>
+            <text>Arquivos zip</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#arquivos-zip" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-50">
+        <navLabel>
+          <text>3.2: Procurar e Extrair Informações de Arquivos</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#procurar-e-extrair-informações-de-arquivos" />
+        <navPoint id="navPoint-51">
+          <navLabel>
+            <text>Redirecionamento</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#redirecionamento" />
+        </navPoint>
+        <navPoint id="navPoint-52">
+          <navLabel>
+            <text>Canalização</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#canalização" />
+        </navPoint>
+        <navPoint id="navPoint-53">
+          <navLabel>
+            <text>Expressões regulares</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#expressões-regulares" />
+        </navPoint>
+        <navPoint id="navPoint-54">
+          <navLabel>
+            <text>Manipulando conteúdo de arquivos</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#manipulando-conteúdo-de-arquivos" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-55">
+        <navLabel>
+          <text>3.3: Converter comandos em um script</text>
+        </navLabel>
+        <content src="text/ch007.xhtml#converter-comandos-em-um-script" />
+        <navPoint id="navPoint-56">
+          <navLabel>
+            <text>Editores de texto</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#editores-de-texto" />
+        </navPoint>
+        <navPoint id="navPoint-57">
+          <navLabel>
+            <text>Edição com Vi</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#edição-com-vi" />
+        </navPoint>
+        <navPoint id="navPoint-58">
+          <navLabel>
+            <text>Início do script</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#início-do-script" />
+        </navPoint>
+        <navPoint id="navPoint-59">
+          <navLabel>
+            <text>Variáveis especiais</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#variáveis-especiais" />
+        </navPoint>
+        <navPoint id="navPoint-60">
+          <navLabel>
+            <text>Tomada de decisão</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#tomada-de-decisão" />
+        </navPoint>
+        <navPoint id="navPoint-61">
+          <navLabel>
+            <text>Instruções de repetição</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#instruções-de-repetição" />
+        </navPoint>
+        <navPoint id="navPoint-62">
+          <navLabel>
+            <text>Execução do script</text>
+          </navLabel>
+          <content src="text/ch007.xhtml#execução-do-script" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-63">
+      <navLabel>
+        <text>Tópico 4: O Sistema Operacional Linux</text>
+      </navLabel>
+      <content src="text/ch008.xhtml#tópico-4-o-sistema-operacional-linux" />
+      <navPoint id="navPoint-64">
+        <navLabel>
+          <text>4.1: Escolhendo um Sistema Operacional</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#escolhendo-um-sistema-operacional" />
+        <navPoint id="navPoint-65">
+          <navLabel>
+            <text>Microsoft Windows</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#microsoft-windows" />
+        </navPoint>
+        <navPoint id="navPoint-66">
+          <navLabel>
+            <text>Mac OS X</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#mac-os-x" />
+        </navPoint>
+        <navPoint id="navPoint-67">
+          <navLabel>
+            <text>Linux</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#linux" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-68">
+        <navLabel>
+          <text>4.2: Entendendo o Hardware do Computador</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#entendendo-o-hardware-do-computador" />
+        <navPoint id="navPoint-69">
+          <navLabel>
+            <text>Periféricos</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#periféricos" />
+        </navPoint>
+        <navPoint id="navPoint-70">
+          <navLabel>
+            <text>Conexões internas</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#conexões-internas" />
+        </navPoint>
+        <navPoint id="navPoint-71">
+          <navLabel>
+            <text>Dispositivos de armazenamento</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#dispositivos-de-armazenamento" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-72">
+        <navLabel>
+          <text>4.3: Onde a Informação é Armazenada</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#onde-a-informação-é-armazenada" />
+        <navPoint id="navPoint-73">
+          <navLabel>
+            <text>Monitoramento de processos</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#monitoramento-de-processos" />
+        </navPoint>
+        <navPoint id="navPoint-74">
+          <navLabel>
+            <text>Recursos de sistema</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#recursos-de-sistema" />
+        </navPoint>
+        <navPoint id="navPoint-75">
+          <navLabel>
+            <text>Localização dos arquivos de sistema</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#localização-dos-arquivos-de-sistema" />
+        </navPoint>
+        <navPoint id="navPoint-76">
+          <navLabel>
+            <text>FHS</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#fhs" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-77">
+        <navLabel>
+          <text>4.4: Seu Computador em Rede</text>
+        </navLabel>
+        <content src="text/ch008.xhtml#seu-computador-em-rede" />
+        <navPoint id="navPoint-78">
+          <navLabel>
+            <text>Configuração dos clientes na rede</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#configuração-dos-clientes-na-rede" />
+        </navPoint>
+        <navPoint id="navPoint-79">
+          <navLabel>
+            <text>Endereço IP</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#endereço-ip" />
+        </navPoint>
+        <navPoint id="navPoint-80">
+          <navLabel>
+            <text>Endereço de rede, máscara de rede e endereço broadcast</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#endereço-de-rede-máscara-de-rede-e-endereço-broadcast" />
+        </navPoint>
+        <navPoint id="navPoint-81">
+          <navLabel>
+            <text>IPv4 e IPv6</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#ipv4-e-ipv6" />
+        </navPoint>
+        <navPoint id="navPoint-82">
+          <navLabel>
+            <text>Rotas</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#rotas" />
+        </navPoint>
+        <navPoint id="navPoint-83">
+          <navLabel>
+            <text>Diagnóstico de conexão</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#diagnóstico-de-conexão" />
+        </navPoint>
+        <navPoint id="navPoint-84">
+          <navLabel>
+            <text>Resolução de nomes</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#resolução-de-nomes" />
+        </navPoint>
+        <navPoint id="navPoint-85">
+          <navLabel>
+            <text>Outros problemas de rede</text>
+          </navLabel>
+          <content src="text/ch008.xhtml#outros-problemas-de-rede" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-86">
+      <navLabel>
+        <text>Tópico 5: Segurança e Permissões de Arquivos</text>
+      </navLabel>
+      <content src="text/ch009.xhtml#tópico-5-segurança-e-permissões-de-arquivos" />
+      <navPoint id="navPoint-87">
+        <navLabel>
+          <text>5.1: Segurança Básica e Identificação de Tipos de Usuários</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#segurança-básica-e-identificação-de-tipos-de-usuários" />
+        <navPoint id="navPoint-88">
+          <navLabel>
+            <text>O usuário root</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#o-usuário-root" />
+        </navPoint>
+        <navPoint id="navPoint-89">
+          <navLabel>
+            <text>Usuários convencionais e de sistema</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#usuários-convencionais-e-de-sistema" />
+        </navPoint>
+        <navPoint id="navPoint-90">
+          <navLabel>
+            <text>Inspeção de usuários</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#inspeção-de-usuários" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-91">
+        <navLabel>
+          <text>5.2: Criação de Usuários e Grupos</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#criação-de-usuários-e-grupos" />
+        <navPoint id="navPoint-92">
+          <navLabel>
+            <text>Conta de usuário</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#conta-de-usuário" />
+        </navPoint>
+        <navPoint id="navPoint-93">
+          <navLabel>
+            <text>Senhas shadow</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#senhas-shadow" />
+        </navPoint>
+        <navPoint id="navPoint-94">
+          <navLabel>
+            <text>Grupos de usuários</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#grupos-de-usuários" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-95">
+        <navLabel>
+          <text>5.3: Controle de Permissões e Propriedade de Arquivos</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#controle-de-permissões-e-propriedade-de-arquivos" />
+        <navPoint id="navPoint-96">
+          <navLabel>
+            <text>Alterando permissões</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#alterando-permissões" />
+        </navPoint>
+        <navPoint id="navPoint-97">
+          <navLabel>
+            <text>Permissões numéricas (octais)</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#permissões-numéricas-octais" />
+        </navPoint>
+        <navPoint id="navPoint-98">
+          <navLabel>
+            <text>Modificar donos e grupos de arquivos</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#modificar-donos-e-grupos-de-arquivos" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-99">
+        <navLabel>
+          <text>5.4: Arquivos e Diretórios Especiais</text>
+        </navLabel>
+        <content src="text/ch009.xhtml#arquivos-e-diretórios-especiais" />
+        <navPoint id="navPoint-100">
+          <navLabel>
+            <text>Permissões suid e sgid</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#permissões-suid-e-sgid" />
+        </navPoint>
+        <navPoint id="navPoint-101">
+          <navLabel>
+            <text>A permissão sticky</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#a-permissão-sticky" />
+        </navPoint>
+        <navPoint id="navPoint-102">
+          <navLabel>
+            <text>Permissões especiais em formato numérico</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#permissões-especiais-em-formato-numérico" />
+        </navPoint>
+        <navPoint id="navPoint-103">
+          <navLabel>
+            <text>Criar e alterar links simbólicos e hardlinks</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#criar-e-alterar-links-simbólicos-e-hardlinks" />
+        </navPoint>
+        <navPoint id="navPoint-104">
+          <navLabel>
+            <text>Hardlinks (links físicos)</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#hardlinks-links-físicos" />
+        </navPoint>
+        <navPoint id="navPoint-105">
+          <navLabel>
+            <text>Softlinks (links simbólicos)</text>
+          </navLabel>
+          <content src="text/ch009.xhtml#softlinks-links-simbólicos" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-106">
+      <navLabel>
+        <text>Objetivos da Certificação Linux Essentials</text>
+      </navLabel>
+      <content src="text/ch010.xhtml#objetivos-da-certificação-linux-essentials" />
+      <navPoint id="navPoint-107">
+        <navLabel>
+          <text>Tópico 1: A comunidade Linux e a carreira Open Source (peso: 7)</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tópico-1-a-comunidade-linux-e-a-carreira-open-source-peso-7" />
+        <navPoint id="navPoint-108">
+          <navLabel>
+            <text>1.1 A evolução do linux e sistemas operacionais populares</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#a-evolução-do-linux-e-sistemas-operacionais-populares" />
+        </navPoint>
+        <navPoint id="navPoint-109">
+          <navLabel>
+            <text>1.2 Principais Aplicações Open Source</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#principais-aplicações-open-source-1" />
+        </navPoint>
+        <navPoint id="navPoint-110">
+          <navLabel>
+            <text>1.3 Entendendo o Software Open Source e suas Licenças</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#entendendo-o-software-open-source-e-suas-licenças-1" />
+        </navPoint>
+        <navPoint id="navPoint-111">
+          <navLabel>
+            <text>1.4 Habilidades ICT e trabalhando no Linux</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#habilidades-ict-e-trabalhando-no-linux" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-112">
+        <navLabel>
+          <text>Tópico 2: Encontrando seu caminho em um Sistema Linux (peso: 9)</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tópico-2-encontrando-seu-caminho-em-um-sistema-linux-peso-9" />
+        <navPoint id="navPoint-113">
+          <navLabel>
+            <text>2.1 O básico sobre a linha de comando</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#o-básico-sobre-a-linha-de-comando" />
+        </navPoint>
+        <navPoint id="navPoint-114">
+          <navLabel>
+            <text>2.2 Usando a linha de comando para conseguir ajuda</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#usando-a-linha-de-comando-para-conseguir-ajuda" />
+        </navPoint>
+        <navPoint id="navPoint-115">
+          <navLabel>
+            <text>2.3 Usando diretórios e listando arquivos</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#usando-diretórios-e-listando-arquivos" />
+        </navPoint>
+        <navPoint id="navPoint-116">
+          <navLabel>
+            <text>2.4 Criando, Movendo e Deletando Arquivos</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#criando-movendo-e-deletando-arquivos" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-117">
+        <navLabel>
+          <text>Tópico 3: O Poder da Linha de Comando (peso: 9)</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tópico-3-o-poder-da-linha-de-comando-peso-9" />
+        <navPoint id="navPoint-118">
+          <navLabel>
+            <text>3.1 Empacotando arquivos na linha de comando</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#empacotando-arquivos-na-linha-de-comando" />
+        </navPoint>
+        <navPoint id="navPoint-119">
+          <navLabel>
+            <text>3.2 Pesquisando e extraindo dados de arquivos</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#pesquisando-e-extraindo-dados-de-arquivos" />
+        </navPoint>
+        <navPoint id="navPoint-120">
+          <navLabel>
+            <text>3.3 Transformando comandos em Scripts</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#transformando-comandos-em-scripts" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-121">
+        <navLabel>
+          <text>Tópico 4: O Sistema Operacional Linux (peso: 8)</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tópico-4-o-sistema-operacional-linux-peso-8" />
+        <navPoint id="navPoint-122">
+          <navLabel>
+            <text>4.1 Escolhendo um Sistema Operacional</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#escolhendo-um-sistema-operacional-1" />
+        </navPoint>
+        <navPoint id="navPoint-123">
+          <navLabel>
+            <text>4.2 Entendendo o Hardware do Computador</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#entendendo-o-hardware-do-computador-1" />
+        </navPoint>
+        <navPoint id="navPoint-124">
+          <navLabel>
+            <text>4.3 Onde os dados são armazenados</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#onde-os-dados-são-armazenados" />
+        </navPoint>
+        <navPoint id="navPoint-125">
+          <navLabel>
+            <text>4.4 Seu Computador na Rede</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#seu-computador-na-rede" />
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint-126">
+        <navLabel>
+          <text>Tópico 5: Segurança e Permissões de Arquivos (peso: 7)</text>
+        </navLabel>
+        <content src="text/ch010.xhtml#tópico-5-segurança-e-permissões-de-arquivos-peso-7" />
+        <navPoint id="navPoint-127">
+          <navLabel>
+            <text>5.1 Segurança Básica e Identificação de Tipos de Usuários</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#segurança-básica-e-identificação-de-tipos-de-usuários-1" />
+        </navPoint>
+        <navPoint id="navPoint-128">
+          <navLabel>
+            <text>5.2 Criando Usuários e Grupos</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#criando-usuários-e-grupos" />
+        </navPoint>
+        <navPoint id="navPoint-129">
+          <navLabel>
+            <text>5.3 Gerenciando permissões e donos de arquivos</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#gerenciando-permissões-e-donos-de-arquivos" />
+        </navPoint>
+        <navPoint id="navPoint-130">
+          <navLabel>
+            <text>5.4 Diretórios e arquivos especiais</text>
+          </navLabel>
+          <content src="text/ch010.xhtml#diretórios-e-arquivos-especiais" />
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
