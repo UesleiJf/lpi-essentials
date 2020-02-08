@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Umbrella Corps"
+echo "Estou na pasta:"
+pwd
+echo "Essas são as pastas"
+ls
+echo "Acabou com o status" $?
+exit 0 # encerra o script graciosamente
+# comentário

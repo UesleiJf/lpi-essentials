@@ -1,0 +1,44 @@
+- Comandos para achar o seu caminho:
+
+help = ajuda,
+man = guia rápido, 
+info = tutoria
+
+- Atribuir variáveis:
+
+Eu="Leleti"
+echo $EU
+
+
+- Ver informações de memória e CPU:
+
+more /proc/meminfo
+more /proc/cpuinfo
+
+
+***  DÙVIDA ***
+
+diff teste teste1
+mount
+mount >> teste1 (o que rolou? não ficou claro sobre isso)
+
+- Comando novo: rmdir (remover diretório, antes eu usava sempre: rm -rf), apenas uma nova opção...
+
+ls -la | grep [z] - lista o que tem na expressão regular
+ls -la | grep [^z] - lista o que não tem a expressão regular
+
+- Busca em um arquivo de texto a expressão exata
+cat nomes | grep Ladis
+
+- Busca em um arquivo de texto a expressão sem se preocupar com maiúscula ou minúscula
+cat nomes | grep ladis
+
+- Mostra a quantidade de linhas, colunas, palavras e o nome do arquivo
+
+wc nomes - o (25,40,255,nomes)
+
+- Mostra a coluna especificada após definir um delimitador: cut -d " " -d f1 nomes (f1 = primeira quebra em relação ao delimitador)
+
+Comandos para formatação de texto:
+
+

@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "O script já começou o trabalho sujo!"
+echo "vamos pegar o arquivo listado abaixo..."
+
+ls |  grep -i "para_" || echo "Não existe esse arquivo listado..." 
+
+echo "Vamos formatá-lo e jogar o resultado em um novo arquivo chamado"
+echo "NOVO_ARQUIVO"
+
+touch NOVO_ARQUIVO
+
+fmt -w 70 para_apagar > NOVO_ARQUIVO
+
+echo "... e agora vamos apagá-lo!"
+
+rm para_apagar && echo "Apagou tranquilo! Confira o novo arquivo" || echo "Deu erro, confira seu script"
+
+echo "Acabou com o status" $?
+exit 0
