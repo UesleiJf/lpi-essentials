@@ -1,0 +1,7 @@
+#!/bin/bash
+#script com condicional
+
+rm meapague && echo "Apaguei!" || echo "Deu paaaaaau"
+
+echo "Acabou com o status" $?
+exit0
