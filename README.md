@@ -1,6 +1,6 @@
 ### Information
 
-LPI Essentials preparatory repository.
+LPI Essentials preparatory repository. (https://www.lpi.org/pt/)
 
 - Using internet content like:
      - Udemy, 
