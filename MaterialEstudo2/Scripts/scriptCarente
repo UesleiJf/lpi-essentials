@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Qual o seu nome?"
-read NOME
-
-echo "Poxa, " $NOME "você está radiante"
-exit 0

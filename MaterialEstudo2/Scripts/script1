@@ -1,8 +1,0 @@
-#!/bin/bash
-echo "Umbrella Corporation"
-
-echo "Você está na área: "
-pwd
-echo "O arsenal é esse:"
-ls -l
-echo "Acabou!"

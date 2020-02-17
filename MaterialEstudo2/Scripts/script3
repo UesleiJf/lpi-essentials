@@ -1,7 +1,0 @@
-echo "Umbrella"
-echo "estou aqui"
-pwd
-echo "o arquivo ironmaiden.txt está aqui?"
-ls ironmaiden.txt
-echo "Acabou com o status" $?
-exit 0
