@@ -10,6 +10,8 @@ LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
      - César Brod(http://brodtec.com/le) and 
      - Linux Forums
 
+- Some materials in this repository are from forums and websites, and are not of their own authorship.
+
 - Configure server Linux
 
 Created by Ueslei J F da Silva 
