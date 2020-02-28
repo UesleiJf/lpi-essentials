@@ -14,6 +14,6 @@ LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
 
 - Configure server Linux
 
-Created by Ueslei J F da Silva 
+Created by Ueslei J F da Silva. 01/2020
 
 
