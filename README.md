@@ -6,6 +6,7 @@ LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
      - Udemy/BR, 
      - Udemy/EN,
      - VivaOLinux,
+     - edivaldobrito.com.br
      - 4Linux,
      - César Brod(http://brodtec.com/le) and 
      - Linux Forums
