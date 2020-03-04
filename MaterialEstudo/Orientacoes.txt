@@ -1,0 +1,572 @@
+Linux Essentials
+RevisÃ£o RÃ¡pida
+
+Cesar Brod
+Linux Professional Institute
+cbrod@lpi.org
+
+DÃª boas vindas aos participantes e apresente-se antes de iniciar a oficina. Dependendo do nÃºmero de participantes, convide-os a se apresentarem tambÃ©m.
+
+Se vocÃª jÃ¡ conhece um pouco sobre o sistema operacional Linux, essa revisÃ£o irÃ¡ ajudÃ¡-lo a passar no exame para a certificacÃ£o Linux Essentials, a primeira em sua carreira profissional com Linux. Se Linux Ã© algo novo para vocÃª, esta revisÃ£o, ainda que rÃ¡pida, o ajudarÃ¡ a entender um pouco mais sobre o que Ã© Linux e o que sÃ£o softwares livres.
+
+Pode ser que nem todo o conteÃºdo possa ser coberto nas horas que temos adiante. NÃ£o faz mal. Mais importante do que correr com o conteÃºdo Ã© firmar o conteÃºdo bÃ¡sico que o ajudarÃ¡ a passar no exame Linux Essentials e, mais do que isso, lhe darÃ¡ a base necessÃ¡ria para aprender cada vez mais.
+
+AlÃ©m do mais, toda essa apresentaÃ§Ã£o ficarÃ¡ disponÃ­vel para vocÃª!
+
+O que Ã© o Linux Professional Institute?
+OrganizacÃ£o sem fins lucrativos que visa o desenvolvimento de um ambiente profissional global em Linux e outros softwares livres, trabalhando com parceiros de capacitaÃ§Ã£o, tanto na academia quanto na iniciativa privada e promovendo certificacÃµes reconhecidas globalmente.
+
+Parte 1
+A comunidade Linux e oportunidades profissionais com Softwares Livres e de CÃ³digo Aberto
+(Peso 7)
+
+O que Ã© o Linux?
+
+OlÃ¡ a todos vocÃªs usando o minix. Estou construindo um sistema operacional livre (apenas como um hobby, nÃ£o serÃ¡ tÃ£o grande ou profissional como o gnu) para o 386 (486) e seus clones. (...) Qualquer sugestÃ£o Ã© bem vinda, mas nÃ£o prometo que as implementarei. 
+Linus Torvalds
+
+(TORVALDS, DIAMOND, 2001).
+
+Minix foi desenvolvido por Andrew Tanenbaum
+
+O que Ã© GNU?
+GNU
+GNU
+NÃ£o Ã©
+Unix
+
+O caso da impressora Xerox e Richard Stallman
+
+A GPL e as Quatro Liberdades
+
+0. Executar o programa
+1. Estudar o programa
+2. Copiar e distribuir
+3. AperfeiÃ§oar
+
+DistribuiÃ§Ãµes
+
+Android
+Debian, Ubuntu (LTS)
+CentOS, openSUSE, Red Hat
+Linux Mint, Scientific Linux
+http://distrowatch.com/
+
+AplicacÃµes
+
+OpenOffice.org, LibreOffice
+Thunderbird, Firefox
+GIMP
+Apache HTTPD, NGINX
+MySQL, PostgreSQL, MongoDB
+NFS, Samba
+C, Java, Perl, shell, Python, PHP
+dpkg, apt-get, rpm, yum
+
+Permitir que os alunos experimentem os aplicativos da interface grÃ¡fica...
+
+Agora, vocÃª tem alguma ideia sobre como poderia fazer a sua vida profissional com software livre?
+
+Parte 2
+
+Encontrando seu caminho no Linux
+(Peso 9)
+
+$ _
+
+Agora a coisa ficou preta!
+
+Por quÃª um terminal?
+
+Como abrir um terminal (dentro da interface grÃ¡fica e com CTRL + ALT + Fn)
+
+O que Ã© Shell?
+
+BASH - Bourne Again Shell
+
+Como eu me viro?
+
+$ help
+A partir do comando "help", explore, junto com os alunos, os comandos
+
+echo
+history
+env (explore as principais variÃ¡veis do ambiente, com destaque a PATH)
+echo $HOME
+export (usando algumas das variÃ¡veis de ambiente)
+	export | grep PATH (aproveite para falar do pipe - Douglas McIlroy, Dennis Ritchie, Ken Thompson, Unix 1970)
+type
+	type env
+which
+	which env
+
+man
+info
+
+ls
+	man ls
+cd
+	man cd
+	info cd
+	type cd
+	man shell
+	info shell
+	env | grep SHELL
+	man shell (busca por cd)
+
+man -k "texto"
+apropos "texto"
+
+/usr/share/doc	
+
+man ls (como listar paginando? - more)
+
+Qual a diferenÃ§a entre man (guia RÃ¡pido) e info (tutorial)?
+
+locate (e updatedb)
+
+EU="BROD"
+echo $EU
+EU1="CESAR"
+echo $EU1 $EU
+
+$ cd /
+Explorando a raiz!
+
+Quais sÃ£o os diretÃ³rios na pasta raiz?
+
+ls e ls -la
+
+more /proc/meminfo 
+more /proc/cpuinfo
+
+/dev
+
+. - aqui
+.. - acima
+~  home
+
+
+
+$ cd ~
+mkdir teste
+cd teste
+ls
+touch teste
+ls
+cat /proc/meminfo > teste
+less teste
+cat /proc/cpuinfo >> teste
+less teste
+cp teste teste1 [o truque do TAB TAB]
+diff teste teste1
+mount
+mount >> teste1
+diff teste teste1
+rm *
+cd ..
+pwd
+rmdir teste
+touch .teste
+ls
+ls -a
+mv .teste teste
+ls
+
+
+Parte 3
+O poder da linha de comando
+(Peso 9)
+
+Arquivando e comprimindo
+
+tar
+gzip
+bzip2
+zip, unzip
+outras opÃ§Ãµes...
+
+Entrando em modo Maddog!
+Proteja o arquivo compactado com uma senha!
+
+O que sÃ£o expressÃµes 
+regulares?
+http://www.novatec.com.br/livros/expressoes-regulares-5ed/
+AlÃ­vio cÃ´mico: sÃ£o aquelas expressÃµes nem boas, nem ruins... :-p
+
+. * ? [ ]
+mkdir teste
+touch teste1
+touch teste2
+touch teste3
+touch teste11
+touch teste21
+touch teste31
+touch teste1111
+
+ls test[tab][tab]
+ls t*
+ls teste1*
+ls teste1?
+
+ls -la | grep [tes]
+ls -la | grep [z]
+ls -la | grep [^z]
+
+
+ManipulacÃ£o bÃ¡sica de textos
+
+vim, pico
+grep
+less
+cat
+sort
+wc
+cut
+head, tail
+
+Todos abrem um editor de texto (pico) e a cada um que se apresenta na sala, adiciona-se a um arquivo (nomes) o nome e o sobrenome de uma pessoa.
+
+Depois de pronto:
+less nomes
+echo "Caio Ladislau" >> nomes
+less nomes
+
+cat nomes | grep Brod
+cat nomes | grep -i brod
+
+cat nomes | grep -i brod > familiabrod
+less familiabrod
+
+SÃ³ os nomes que comeÃ§am com A
+
+cat nomes | grep ^A
+
+E se eu quero ignorar maiÃºsculas e minÃºsculas?
+
+cat nomes | sort
+
+Como gravar a saÃ­da em um arquivo ordenado?
+
+wc nomes - o que sÃ£o os nÃºmeros resultantes? Como vocÃª descobre isso?
+
+cut -d" " -f1 nomes
+
+head e tail - demonstre com arquivos de log
+
+tail -f /var/log/syslog
+
+Como eu sei, dentro da pasta /etc, quais e quantas sÃ£o as pastas dentro dela?
+
+Entrando em modo Maddog!
+
+Mais comandos para a formataÃ§Ã£o de textos
+fmt
+nl
+split
+tr
+uniq
+join
+paste
+pr
+
+Permita que os alunos usem man, info e --help para descobrir o que faz cada um destes comandos
+
+fmt Ã© usado para formatar, por exemplo, o nÃºmero de colunas de um texto:
+fmt -w 80 arquivo.txt
+
+Pegue um texto grande (vocÃª conhece o mussumipsum.com?), formate-o em 70 colunas, numere as linhas e separe-o em arquivos com 20 linhas cada um.
+Que tal pegar o mesmo texto grande e usar o 'pr' para preparÃ¡-lo para a impressÃ£o?
+
+Entrando em modo Maddog!
+
+Scripts em Shell
+http://www.novatec.com.br/livros/shellscript/
+http://www.dicas-l.com.br/cantinhodoshell/
+https://jneves.wordpress.com/
+
+
+#!/bin/bash
+echo "Meu primeiro script em shell"
+echo "Estou rodando nessa pasta:"
+pwd
+echo "Esses arquivos estÃ£o nessa pasta:"
+ls
+echo "Acabou!"
+
+Por quÃª #! ?
+
+Execute com 
+
+bash script1
+
+chmod +x script1
+
+./script1
+
+#!/bin/bash
+echo "Meu segundo script em shell"
+echo "Estou rodando nessa pasta:"
+pwd
+echo "Esses arquivos estÃ£o nessa pasta:"
+ls
+echo "Acabou com o status" $?
+exit 0 # encerra o script graciosamente
+# isso Ã© um comentÃ¡rio
+
+No Linux, no news is good news. Status 0 Ã© bom!
+
+#!/bin/bash
+# Script criado por Cesar Brod
+echo "Meu terceiro script em shell"
+echo "Estou rodando nessa pasta:"
+pwd
+echo "O arquivo naoexiste.txt estÃ¡ aqui?"
+ls naoexiste.txt
+echo "Acabou com o status" $?
+exit 0
+
+O que Ã© esse status resultante? Como eu posso saber o que ele significa (man ls - procurar por status).
+
+#!/bin/bash
+# Script criado por Cesar Brod
+# Esse script tenta apagar um arquivo e 
+# avisa se conseguiu fazÃª-lo
+
+rm meapague && echo "Apaguei" || echo "Deu pau!"
+
+echo "Acabou com o status" $?
+exit 0
+
+&& = AND
+|| = OR
+
+Se der tempo...
+
+Experimente tirar o lado OR e veja se muda o status de erro no caso do arquivo nÃ£o existir.
+
+Como saber o que Ã© esse status?
+
+Na falta de informacÃ£o, todo o status diferente de 0 Ã© um erro.
+
+FaÃ§a um script que pegue um texto grande, formate-o em 70 colunas, numere as linhas, separe-o em arquivos com 20 linhas cada um e apague o arquivo original, verificando se o apagamento foi bem sucedido.
+
+Entrando em modo Maddog!
+
+#!/bin/bash
+# Script para quando vocÃª estÃ¡ carente
+echo "Qual Ã© seu nome, pessoa linda?"
+read NOME
+echo "Puxa," $NOME "vocÃª estÃ¡ radiante hoje!"
+exit 0
+
+
+#!/bin/bash
+# Script para quando vocÃª estÃ¡ carente
+echo "Qual Ã© seu nome, pessoa linda?"
+read NOME
+echo "Puxa," $NOME "vocÃª estÃ¡ radiante hoje!"
+echo "Eis o pensamento do dia para vocÃª," $NOME
+fortune
+exit 0
+
+O comando fortune deu erro? Como vocÃª pode instalÃ¡-lo (no Debian e no Fedora)
+
+#!/bin/bash
+# Script para somar dois nÃºmeros
+echo "Digite o primeiro nÃºmero, pessoa linda!"
+read NUM1
+echo "Digite o segundo nÃºmero, meu bem!"
+read NUM2
+TOTAL=$NUM1+$NUM2
+echo "Eis o resultado de" $NUM1 "+" $NUM2 ":" $TOTAL
+exit 0
+
+Como vocÃª resolve isso?
+
+No comeÃ§o do script
+
+declare -i NUM1
+declare -i NUM2
+declare -i TOTAL
+
+
+#!/bin/bash
+# Acerte o nÃºmero secreto!
+declare -i NUM1
+echo "Em qual nÃºmero estou pensando, pessoa linda?"
+read NUM1
+if [ $NUM1 = 7 ];
+then
+    echo "Acertou!"
+else
+    echo "Errou!"
+fi
+exit 0
+
+Qual a sua ideia para tornar esse programa muito mais interessante?
+
+#!/bin/bash
+# Acerte o nÃºmero secreto!
+declare -i NUM1
+for (( ; ; ))
+do
+    echo "Em qual nÃºmero estou pensando, pessoa linda!"
+    read NUM1
+    if [ $NUM1 = 7 ];
+    then
+        echo "Acertou!"
+    else
+        echo "Errou!"
+    fi
+done
+exit 0
+
+E se o nÃºmero fosse aleatÃ³rio e o programa terminasse quando a pessoa querida o adivinhasse?
+
+Entrando em modo Maddog!
+
+Um papo sobre os principais sistemas operacionais. Com qual deles vocÃª pode fazer o quÃª? Quais respeitam as quatro liberdades?
+
+kernel.org
+
+https://en.wikipedia.org/wiki/Computer_hardwareÃƒÂ¾tps://pt.wikipedia.org/wiki/Computador
+
+Descobrindo o computador por meio de comandos e arquivos
+
+ps
+top
+free
+dmesg
+/etc/
+/var/log/ (syslog)
+/boot/
+/proc/
+/dev/
+/sys/
+
+FaÃ§a os alunos exercitarem os comandos e peÃ§a que eles mesmos tentem explicÃ¡-los
+
+Idem para os arquivos e pastas
+
+PeÃ§a que usem o ps, o top e o free, abram programas no desktop e vejam o que muda na saÃ­da desses comandos
+
+tail -f /var/log/syslog
+
+Onde estou na Internet?
+
+ifconfig
+route
+netstat
+ping
+host
+/etc/resolv.conf
+/etc/hosts
+/etc/init.d/networking
+
+Ferramentas grÃ¡ficas
+
+Desenhar o computador, o gateway e a internet...
+
+O que faz esse comando:
+
+netstat -atnp | grep ESTA
+
+E este?
+
+watch -d -n0 "netstat -atnp | grep ESTA"
+
+Parte 5
+
+SeguranÃ§a e permissÃµes
+(Peso 7)
+
+UsuÃ¡rios
+O super usuÃ¡rio
+/etc/passwd
+/etc/shadow
+/etc/group
+id
+who
+whoami
+w
+last
+sudo
+su
+/etc/sudoers
+
+Criando usuÃ¡rios e grupos
+useradd
+userdel
+groupadd
+groupdel
+passwd
+adduser
+deluser
+/etc/passwd
+/etc/shadow
+/etc/group
+
+Ferramentas grÃ¡ficas
+
+Explore com man, --help
+which adduser
+file /usr/sbin/adduser
+less /usr/sbin/adduser
+
+PermissÃµes e propriedades de arquivos
+
+ls -a
+ls -l
+ls -lah
+chown
+chmod
+-rwxrwxrwx
+d/- user group owner
+
+User sÃ£o todos os usuÃ¡rios! (pense em Universe)
+
+Mostrar, no quadro, como funciona a numeracÃ£o binÃ¡ria para o modo octal
+
+Links e links simbÃ³licos
+
+ln -s
+ls -la
+/etc/init.d
+/etc/rc2.d
+Observe o init.d e o rc2.d para ver como os links simbÃ³licos sÃ£o Ãºteis.
+S start
+K stop
+nÃºmero Ã© a ordem
+Lembra do comando runlevel?
+
+Acabou?
+
+nÃ£o! Tem muito mais!
+https://wiki.lpi.org/wiki/LinuxEssentials_Objectives_V1.5
+A importÃ¢ncia das senhas fortes
+Outros tipos de estruturas de repetiÃ§Ã£o (until ... do, while..., case)
+EndereÃ§amento IPv4 e IPv6
+/etc/skel
+/tmp
+Sticky Bit
+VirtualizacÃ£o
+
+Ã‰ impossÃ­vel cobrir tudo o que cai no exame Linux Essentials em poucas horas. Familiarize-se com os objetivos nesse link.
+nÃ£o cobrimos praticamente nada de arquitetura de hardware, vocÃª deve saber quais os componentes de seu computador: processador, memÃ³ria, expansÃµes, armazenamento em disco, pendrives (flashdrives), rede, perifÃ©ricos.
+
+Onde eu posso estudar o que falta?
+lcnsqr.com/curso-linux-essentials
+www.linuxcertification.co.za/sites/default/files/linux-esentials-manual.pdf
+Google: "Linux Essentials" filetype:pdf
+Google: Linux site:novatec.com.br
+Google: Linux site:altabooks.com.br
+www.4linux.com.br/curso/linux-beginners-cloud-online
+...
+
+Obrigado!
+
+Cesar Brod
+cbrod@lpi.org
+
+
