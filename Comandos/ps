@@ -1,1 +1,24 @@
+Comando ps
+
+- Serve para mostrar o status dos processos do sistema.
+
+Parametros:
+
+    -e (Mostra todos os processos);
+    -f (Mostra tudo em formato de lista);
+    -u (Mostra os processos do usuário atual);
+    -p (Mostra o processo de um pid específico)
+
+Exemplos com outros parâmetros:
+
+    ps -ef (Mostra todos os processos, full)
+
+    ps -eH (Mostra uma árvore de processos)
+
+    ps -e --forest (Mostra uma árvore de pocessos de outra forma)
+
+    ps -u username (Mostra os processos do usuário
+
+    pstree (Mostra uma árvore de processos de outra forma)
+
 
