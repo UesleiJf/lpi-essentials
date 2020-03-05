@@ -7,7 +7,7 @@ Parametros:
     -e (Mostra todos os processos);
     -f (Mostra tudo em formato de lista);
     -u (Mostra os processos do usuário atual);
-    -p (Mostra o processo de um pid específico)
+    -p (Mostra o processo de um pid específico).
 
 Exemplos com outros parâmetros:
 
@@ -21,4 +21,6 @@ Exemplos com outros parâmetros:
 
     pstree (Mostra uma árvore de processos de outra forma)
 
+    top (Abre um gerenciador de processos)
 
+    htop (Abre um gerenciador de processos de outra forma). Em algumas distribuições é necessário usar: sudo apt install htop
