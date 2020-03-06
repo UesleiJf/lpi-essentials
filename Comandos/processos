@@ -1,3 +1,5 @@
 Manipular processos em segundo plano.
 
+    kill (PID)
+
 
