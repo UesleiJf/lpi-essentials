@@ -8,6 +8,4 @@ Processos em primeiro plano:
 
 Manipular processos em segundo plano.
 
-    kill (PID)
-
-
+    bg [%num] (Suspende o processo em segundo plano, o "num" equivale ao processo que quer suspender, caso não seja passado, o bg irá operar no trabalho atual)
