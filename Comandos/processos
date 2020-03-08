@@ -1,5 +1,11 @@
-Manipular processos em primeiro plano:
+Processos em primeiro plano:
 
-Manipular processos em segundo plano:
+    - Quando um processo está rodando em primeiro plano, o terminal atual não pode ser usado,
+      dessa forma é necessário abrir outro terminal.
 
+    Ctrl + C (mata o processo em primeiro plano no terminal);
+    Ctrl + Z (Suspende o processo em primeiro plano)
 
+Manipular processos em segundo plano.
+
+    bg [%num] (Suspende o processo em segundo plano, o "num" equivale ao processo que quer suspender, caso não seja passado, o bg irá operar no trabalho atual)
