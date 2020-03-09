@@ -9,3 +9,5 @@ Processos em primeiro plano:
 Manipular processos em segundo plano.
 
     bg [%num] (Suspende o processo em segundo plano, o "num" equivale ao processo que quer suspender, caso não seja passado, o bg irá operar no trabalho atual)
+
+    fg [%num] (Coloca em primeiro plano um processo que estava em segundo plano, caso não seja passado o "num", o fg irá operar no trabalho atual)
