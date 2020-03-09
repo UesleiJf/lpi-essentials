@@ -29,3 +29,7 @@ Executar um cron a cada 30 minutos:
 0,30 * * * * /opt/acme/bin/half-hour-check
 
 O início do comando acima também poderia ser com: */2 ...
+
+Executar um cron nos 5 primeiros minutos de uma hora:
+
+0-4 * * * * /opt/acme/bin/first-five-mins
