@@ -25,3 +25,5 @@
     kill -l (Lista de processos)
 
     kill -9 PID (mata o processo que não responde mais, no -9 força esse processo)
+
+- Para executar um programa em segundo plano e descobrir o PID dele, basta colocar o "&" no final. Exemplo: ./Spark &
