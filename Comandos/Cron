@@ -33,3 +33,12 @@ O início do comando acima também poderia ser com: */2 ...
 Executar um cron nos 5 primeiros minutos de uma hora:
 
 0-4 * * * * /opt/acme/bin/first-five-mins
+
+- Contrab Shortcuts
+OBS: os comandos abaixo não são padronizados para todos os linux, pode acontecer de não funcionar em algumas distribuições.
+
+    @yearly 0 0 1 1 * (executa uma vez por ano à meia noite da manhã de 1 de janeiro)
+
+    @annually 0 0 1 1 * (é a mesma coisa de @yearly, porém uma única vez)
+ 
+    @monthly 0 0 1 * * (são executados uma vez por mês a meia-noite da manhã do primeiro dia do mês)
