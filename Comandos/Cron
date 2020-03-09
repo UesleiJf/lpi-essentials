@@ -22,3 +22,9 @@ Horas (0-23)
 Dias do mês (1-31)
 Meses do Ano (1-12)
 Dia da semana (0-6)
+
+
+Executar um cron a cada 30 minutos:
+
+0,30 * * * * /opt/acme/bin/half-hour-check
+
