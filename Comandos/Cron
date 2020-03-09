@@ -42,3 +42,11 @@ OBS: os comandos abaixo não são padronizados para todos os linux, pode acontec
     @annually 0 0 1 1 * (é a mesma coisa de @yearly, porém uma única vez)
  
     @monthly 0 0 1 * * (são executados uma vez por mês a meia-noite da manhã do primeiro dia do mês)
+
+    @weekly 0 0 * * 0 (corre 1x por semana a meia noite da manhã do domingo)
+
+    @daily 0 0 * * * (corre diariamente todos os dias a meia noite)
+
+    @midnight 0 0 * * *(é a mesma coisa de @daily)
+
+    @hourly 0 * * * * (corre rodar uma vez por hora no início da hora ou no fim da hora)
