@@ -1,2 +1,2 @@
 # Rodar todo domingo às 07:00
-0 7 * * 1 /opt/sales/bin/weekly-report
+45 18 * * 1 /usr/bin/htop
