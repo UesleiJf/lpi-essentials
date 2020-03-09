@@ -50,3 +50,7 @@ OBS: os comandos abaixo não são padronizados para todos os linux, pode acontec
     @midnight 0 0 * * *(é a mesma coisa de @daily)
 
     @hourly 0 * * * * (corre rodar uma vez por hora no início da hora ou no fim da hora)
+
+
+- O comando contrab manipula tarefas agendadas, você pode usar o arquivo de espeço Contrab para instalar o novo Contrab a partir do conteúdo desse arquivo.
+Para listar seus trabalhos, execute contrab-l, para editá-los use contrab-e
