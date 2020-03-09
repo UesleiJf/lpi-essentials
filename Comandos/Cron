@@ -1,1 +1,18 @@
 Arquivo para configuração que especifica alguns comandos serão executados de forma automãtica.
+
+A cada minuto o arquivo cron verifica para ver se há algum trabalho agendado.
+
+Cada linha em um contrab representa um trabalho e contém duas informações: Quando executar e o que executar.
+A especificação de tempo consiste em cinco campos: 
+
+* * * * * command (*= minutos, horas, dia do mês, mês e dia da semana command).
+
+Exemplo:
+
+# Correr todo dia às 07:00
+
+0 7 * * 1 /opt/sales/bin/weekly-report 
+
+O comando acima corresponde a: 0 minutos, 7 horas, * default(nada), * default(nada), dia 1 da semana, e executa: /opt/sales/bin/weekly-report
+
+
