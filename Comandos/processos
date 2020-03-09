@@ -24,4 +24,4 @@
 
     kill -l (Lista de processos)
 
-    kill 
+    kill -9 PID (mata o processo que não responde mais, no -9 força esse processo)
