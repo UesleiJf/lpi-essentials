@@ -12,6 +12,16 @@
 
     fg [%num] (Coloca em primeiro plano um processo que estava em segundo plano, caso não seja passado o "num", o fg irá operar no trabalho atual)
 
+    job [%num] (Informa o número do processo)
+
+- Parâmetros para o comando Kill
+
     kill [PID]  (É necessário informar o PID do processo para matá-lo, podemos descobrir o PID do processo com o comando "top")
 
-    job [%num] (Informa o número do processo)
+    Crtl-C (Mata o processo em primeiro plano)
+
+    kill [-sig] pid (Manda um sinal para matar o processo)
+
+    kill -l (Lista de processos)
+
+    kill 
