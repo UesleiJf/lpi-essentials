@@ -15,4 +15,10 @@ Exemplo:
 
 O comando acima corresponde a: 0 minutos, 7 horas, * default(nada), * default(nada), dia 1 da semana, e executa: /opt/sales/bin/weekly-report
 
+É valido lembrar que:
 
+Minutos (0-59)
+Horas (0-23)
+Dias do mês (1-31)
+Meses do Ano (1-12)
+Dia da semana (0-6)
