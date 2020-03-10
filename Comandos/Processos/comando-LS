@@ -24,3 +24,6 @@ ls -lha (a diferença entre esse comando e o "ls -la" é o a forma que o tamanho
 
 ls -lha -F (o -F indica se é um diretório com uma "/" no final do nome, "@" se é um link, ou "*" se for um executable)
 
+ls -t (lista os arquivos por tempo);
+ls -r(lista os arquivos na ordem inversa do ls);
+ls -latr (lista os arquivos, inclusive os ocultos, listando por tempo e pela ordem inversa)
