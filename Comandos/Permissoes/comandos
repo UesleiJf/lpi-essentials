@@ -1,3 +1,22 @@
 Manipulação de permissões
 
+ls -l
+-rw-rw-r-- 1 uesleisilva uesleisilva 29 Mar 10 14:31 comandos
 
+Vamos analisar as permissões do arquivo "comandos" acima:
+
+- (- = arquivo normal, d = diretório, | = link simbólico)
+r (- = no read, r = Read)
+w (- = no write, w = Write)
+- (- = no executable, x = executable)
+r (- = no read, r = Read)
+w (- = no write, w = Write)
+- (- = no executable, x = executable)
+r
+-
+-
+
+u = User
+g = Group
+o = Other
+a = All
