@@ -2,20 +2,32 @@ Estrutura de diretórios
 
 / ("root", o nível mais alto da hierarquia do sistemas de arquivos, é o arquivo raiz da estrutura de árvore);
 
-/bin (É onde ficam os arquivos binários ou arquivos executáveis);
+  /bin (É onde ficam os arquivos binários ou arquivos executáveis);
 
-/etc (onde ficam os arquivos de configuração, que controlam o SO ou aplicativos);
+  /etc (onde ficam os arquivos de configuração, que controlam o SO ou aplicativos);
 
-/home (é o loca em que os diretórios iniciais dos usuários estão ativos);
+  /home (é o loca em que os diretórios iniciais dos usuários estão ativos);
 
-/opt (onde ficam os programas que não são do sistema operacional, exemplo: GoogleChrome, não faz parte do sistema Linux);
+  /opt (onde ficam os programas que não são do sistema operacional, exemplo: GoogleChrome, não faz parte do sistema Linux);
 
-/tmp (é a pasta temporária do sistema);
+  /tmp (é a pasta temporária do sistema);
 
-/usr (é onde os programas relacionado aos usuários estão, cada um desses diretórios podem ter subdiretórios.);
+  /usr (é onde os programas relacionado aos usuários estão, cada um desses diretórios podem ter subdiretórios. OBS: Um exemplo para a pasta /usr é o subdiretório de binários, onde a estrutura é: /usr/bin/);
 
-OBS: Um exemplo para a pasta /usr é o subdiretório de binários, onde a estrutura é: /usr/bin/
+  /var (É para dados variáveis, onde mudam com frequência, exemplo arquivos de logs do sistema);
 
-/var (É para dados variáveis, onde mudam com frequência, exemplo arquivos de logs do sistema);
+  /cdrom (diretório para montagem de cdrom, algumas distribuições usam o diretório /media);
 
+  /srv (são usados para para armazenar os dados que são servidos pelo servidor Linux, exemplo: /srv/www para web, /srv/ftp para servidor FTP);
 
+  /boot (armazena o kernel e alguns arquivos usado pelo lilo/grub, que são carregados na fase inicial do boot);
+
+  /dev (links para dispositivos de hardware. Exemplo: todos os arquivos gravados no /dev/dsp serão reproduzidos pela placa de som);
+
+  /mnt (diretório para ponto de montagem para o CD-ROM, drive de disquetes, drives zip);
+
+  /lib (bibliotecas essenciais compartilhadas e módulos do kernel);
+
+  /proc (diretório virtual de informações do sistema);
+
+  /sbin (diretório de programas usados pelo superusuário root, para administração e controle do funcionamento do sistema);
