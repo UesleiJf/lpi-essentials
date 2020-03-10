@@ -1,6 +1,7 @@
 su [username] - Muda o usuário ou torna o atual como admin
 
-Para não abrir um novo terminal, o argumento a ser passado é o "-" (sem aspas)
+Com o parâmetro "su - [username]" é trocado o ambiente completo do novo usuário. Ex: ao fazer o login com o novo usuário, as variáveis
+do usuário passado não aparecem, pois o ambiente vem com a configuração do novo usuário.
 
 -c comando (Especifica o comando a ser executado)
 
