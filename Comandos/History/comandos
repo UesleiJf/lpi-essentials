@@ -1,2 +1,19 @@
 history (comando para ver o histórico de comandos no terminal)
 
+~/.bashrc (mostra a configuração do arquivo do history)
+
+Após o comando "history", podemos escolher alguns dos comandos abaixo para executar um comando da lista obtida:
+
+!! (referencia ao comando mais recente)
+
+!N (referencia ao comando de número N do histórico)
+
+!-N (Comando atual, menos N do histórico)
+
+!string (referencia ao comando mais recente que comece com a string informada)
+
+!?string (referencia ao comando mais recente que contenha a string informada)
+
+^string1^string2 (executa novamente o último comando, substituindo a primeira ocorrencia da string1 pela string2)
+
+
