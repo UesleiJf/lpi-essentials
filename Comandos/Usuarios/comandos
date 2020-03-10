@@ -22,3 +22,6 @@ sudo -u user command (executa o comando como usuário especificado)
 sudo /etc/init.d/apache2 start (inicia um serviço, no exemplo o Apache2)
 
 sudo -u [username] /etc/init.d/service start (roda o comando na conta atual como outro usuário)
+
+
+Para configurar o sudo configuração, precisamos editar o arquivo /etc/sudoers
