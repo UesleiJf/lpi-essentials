@@ -8,4 +8,4 @@ echo $PATH (vai procurar a variável $PATH em todos os diretórios onde ela pode
 
 wich (localização ou o caminho completo do comando que você está executando. Ex: which ls. A saída será: /bin/ls)
 
-
+--help OU -h para ajuda (Exemplo: --help ls. A saída vai ser toda a documentação do ls)
