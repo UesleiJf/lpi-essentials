@@ -1,0 +1,7 @@
+su [username] - Muda o usuário ou torna o atual como admin
+
+Para não abrir um novo terminal, o argumento a ser passado é o "-" (sem aspas)
+
+-c comando (Especifica o comando a ser executado)
+
+whoami - mosta qual usuário está conectado
