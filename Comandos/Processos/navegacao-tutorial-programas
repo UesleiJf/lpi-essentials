@@ -1,0 +1,11 @@
+Usando help e manuais no Linux
+
+man vim (abrirá o editor um terminal com todas as informações do vim para o seu uso, como parâmetros e dicionários)
+
+man ls (abrirá o editos com os parâmetros do comando ls)
+
+echo $PATH (vai procurar a variável $PATH em todos os diretórios onde ela pode ser acessada)
+
+wich (localização ou o caminho completo do comando que você está executando. Ex: which ls. A saída será: /bin/ls)
+
+
