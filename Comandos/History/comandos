@@ -4,6 +4,8 @@ history (comando para ver o histórico de comandos no terminal)
 
 ~/.bash_history (mostra o histórico do comando history, com o limite das últimas 1000 linhas)
 
+echo $HISTSIZE (mostra a quantidade de linhas máximas do comando acima, por padrão pode ser 500 ou 1000)
+
 Após o comando "history", podemos escolher alguns dos comandos abaixo para executar um comando da lista obtida:
 
 !! (referencia ao comando mais recente)
