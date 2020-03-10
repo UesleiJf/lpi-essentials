@@ -1,4 +1,4 @@
-Manipulação de permissões
+-Manipulação de permissões
 
 Vamos analisar as permissões do arquivo "comandos" acima:
 
@@ -37,12 +37,15 @@ rwx (Read, Write, Execute)
 
 Exemplos:
 
-Dar permissão de execução para o usuário no arquivo "comandos"
-chmod u+x comandos
+Dar permissão de execução para o usuário no arquivo "comandos", aqui usamos o "u" de Usuário
+chmod u+x comandos 
 
-Tirar permissão de escrita para o grupo no arquivo "comandos"
+Tirar permissão de escrita para o grupo no arquivo "comandos", aqui usamos o "g" de Group
 chmod g-w comandos
 
-Dar permissão de escrita para Outros
+Dar permissão de escrita para Outros, aqui usamos o "o" de Other
 chmod o+w comandos
+
+Dar permissão para todos de uma vez: u, g, o (O comando abaixo vai dar permissão de leitura e escrita no arquivo "comandos" para o usuário, grupo e outros de uma vez)
+chmod a=rw comandos
 
