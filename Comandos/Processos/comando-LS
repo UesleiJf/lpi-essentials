@@ -1,19 +1,24 @@
 Comando ls e seus parâmetros
 
-ls (lista de forma simples)
+ls (lista de forma simples, correndo os resultados como um texto, na horizontal, não lista arquivos ocultos)
 
-ls -l (lista de forma detalhada).
+ls -l (lista de forma detalhada, e cada resultado em uma linha).
 
 Exemplo: 
 
 $ ls -l
--rw-rw-r-- 1 usuario grupo    265 Fev 28 15:45 teste.php
+-rw-rw-r-- 1 usuario grupo    39706 Fev 28 15:45 teste.php
 
 -rw-rw-r-- = permissões (escrita, leitura...)
 1 = número de links para esse arquivo
 usuario = proprietário do arquivo
 grupo = grupo que o arquivo pertence
-265 = tamanho do arquivo
+39706 = tamanho do arquivo
 Fev 28 15:45 = última alteração do arquivo
 teste.php = nome do arquivo
 
+ls -a (lista de forma simples, correndo os resultados como um texto, na horizontal, lista arquivos ocultos)
+
+ls -la (lista de forma detalhada os arquivos, incluindo os ocultos, um arquivo em cada linha)
+
+ls -lha (a diferença entre esse comando e o "ls -la" é o a forma que o tamanho do arquivo é exibido, no comando acima o tamanho é mostrado como exemplo: 39706, enquanto no outro comando é 39K)
