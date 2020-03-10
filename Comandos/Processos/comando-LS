@@ -27,3 +27,13 @@ ls -lha -F (o -F indica se é um diretório com uma "/" no final do nome, "@" se
 ls -t (lista os arquivos por tempo);
 ls -r(lista os arquivos na ordem inversa do ls);
 ls -latr (lista os arquivos, inclusive os ocultos, listando por tempo e pela ordem inversa)
+
+ls -R (lista recursivamente apenas um nível abaixo do diretório atual)
+
+Obs: Para os próximos comandos, instale o seguinte programa: sudo apt install tree
+
+tree -d (Lista apenas os diretórios)
+
+tree -C (Lista toda a árvore a partir do diretório atual - arquivos e pastas)
+
+tree -C -a (Lista toda a árvore a partir do diretório atual - arquivos e pastas, incluindo ocultos)
