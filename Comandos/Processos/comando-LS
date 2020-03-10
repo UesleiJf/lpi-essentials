@@ -1,6 +1,7 @@
 Comando ls e seus parâmetros
 
-ls (lista de forma simples, correndo os resultados como um texto, na horizontal, não lista arquivos ocultos)
+ls    (lista de forma simples, correndo os resultados como um texto, na horizontal, não lista arquivos ocultos)
+ls -a (lista de forma simples, correndo os resultados como um texto, na horizontal, lista arquivos ocultos)
 
 ls -l (lista de forma detalhada, e cada resultado em uma linha).
 
@@ -17,8 +18,9 @@ grupo = grupo que o arquivo pertence
 Fev 28 15:45 = última alteração do arquivo
 teste.php = nome do arquivo
 
-ls -a (lista de forma simples, correndo os resultados como um texto, na horizontal, lista arquivos ocultos)
-
 ls -la (lista de forma detalhada os arquivos, incluindo os ocultos, um arquivo em cada linha)
 
 ls -lha (a diferença entre esse comando e o "ls -la" é o a forma que o tamanho do arquivo é exibido, no comando acima o tamanho é mostrado como exemplo: 39706, enquanto no outro comando é 39K)
+
+ls -lha -F (o -F indica se é um diretório com uma "/" no final do nome, "@" se é um link, ou "*" se for um executable)
+
