@@ -39,3 +39,5 @@ head filex.txt sorted_files.txt notes.txt
 
 !^ = files.txt
 !$ = notes.txt
+
+Ao digitar crtl+R no terminal, é possível digitar parte do comando desejado, obtendo o último resultado da busca.
