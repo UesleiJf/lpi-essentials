@@ -30,3 +30,12 @@ history (a última linha será o comando acima)
 !! (executa todo o comando acima, por ser o último)
 
 vim !:2 (a saída será o editor vim abrindo o sorted_files.txt)
+
+!^ (representa o primeiro argumento)
+
+!$ (representa o último argumento)
+
+head filex.txt sorted_files.txt notes.txt
+
+!^ = files.txt
+!$ = notes.txt
