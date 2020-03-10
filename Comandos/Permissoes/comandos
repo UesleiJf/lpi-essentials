@@ -27,3 +27,22 @@ u = User
 g = Group
 o = Other
 a = All
+
+Comandos:
+
+chmod = change mode command (usado para mudar a permissão dos arquivos, é necessário ser sudo em alguns diretórios)
+ugoa (User category, User, Group, Other, All)
++-= (Add,subtract, or set permissions)
+rwx (Read, Write, Execute)
+
+Exemplos:
+
+Dar permissão de execução para o usuário no arquivo "comandos"
+chmod u+x comandos
+
+Tirar permissão de escrita para o grupo no arquivo "comandos"
+chmod g-w comandos
+
+Dar permissão de escrita para Outros
+chmod o+w comandos
+
