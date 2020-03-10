@@ -21,3 +21,12 @@ Após o comando "history", podemos escolher alguns dos comandos abaixo para exec
 ^string1^string2 (executa novamente o último comando, substituindo a primeira ocorrencia da string1 pela string2)
 
 
+Exemplos:
+
+head filex.txt sorted_files.txt notes.txt (vai gerar uma saída e vai ser gravado no history)
+
+history (a última linha será o comando acima)
+
+!! (executa todo o comando acima, por ser o último)
+
+vim !:2 (a saída será o editor vim abrindo o sorted_files.txt)
