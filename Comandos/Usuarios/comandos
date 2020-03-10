@@ -7,4 +7,14 @@ do usuário passado não aparecem, pois o ambiente vem com a configuração do n
 
 whoami - mosta qual usuário está conectado
 
-su -c 'echo $EXAMPLE_HOME' - username (é criada a variável $EXAMPLE_HOME)
+su -c 'echo $EXAMPLE_HOME' - username (é criada a variável $EXAMPLE_HOME para o outro usuário e é acessível para a conta que criou)
+
+sudo su (da a permissão de superusuário para as contas)
+
+sudo -l (Lista os comandos permitidos pelo usuário)
+
+sudo command (Roda o comando como root)
+
+sudo -u root command (executa o comando como o usuário root)
+
+sudo -u user command (executa o comando como usuário especificado)
