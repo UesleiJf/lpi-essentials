@@ -1,0 +1,19 @@
+Comando ls e seus parâmetros
+
+ls (lista de forma simples)
+
+ls -l (lista de forma detalhada).
+
+Exemplo: 
+
+$ ls -l
+-rw-rw-r-- 1 usuario grupo    265 Fev 28 15:45 teste.php
+
+-rw-rw-r-- = permissões (escrita, leitura...)
+1 = número de links para esse arquivo
+usuario = proprietário do arquivo
+grupo = grupo que o arquivo pertence
+265 = tamanho do arquivo
+Fev 28 15:45 = última alteração do arquivo
+teste.php = nome do arquivo
+
