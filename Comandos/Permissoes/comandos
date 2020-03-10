@@ -49,3 +49,30 @@ chmod o+w comandos
 Dar permissão para todos de uma vez: u, g, o (O comando abaixo vai dar permissão de leitura e escrita no arquivo "comandos" para o usuário, grupo e outros de uma vez)
 chmod a=rw comandos
 
+Para controlar as permissões, vale entender o que cada número decimal vale na alteração da permissão:
+
+0 - retira toda a permissão
+1 - permissão de execução
+2 - permissão de escrever
+3 - permissão de executar e escrever
+4 - permissão de ler
+5 - permissão de ler e executar
+6 - permissão de ler e escrever
+7 - permissão de permissão de ler, escrever e executar.
+
+Após o comando chmod, temos a seguência de 3 números, que são referente ao usuário, grupo e outros respectivamente. Exemplo:
+
+chmod 741 comandos (O 7 é a permissão para o Usuário, o 4 é a permissão para o Grupo e o 1 é a permissão para o Outros).
+Para saber o que pode ser feito com esse arquivo após esse comando temos que ler a tabela de numeração acima e concluir que:
+
+O usuário pode ler, escrever e executar (7)
+O grupo pode ler (4)
+O outros podem executar(1).
+
+
+
+
+
+
+
+
