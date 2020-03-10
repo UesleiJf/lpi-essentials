@@ -6,3 +6,5 @@ do usuário passado não aparecem, pois o ambiente vem com a configuração do n
 -c comando (Especifica o comando a ser executado)
 
 whoami - mosta qual usuário está conectado
+
+su -c 'echo $EXAMPLE_HOME' - username (é criada a variável $EXAMPLE_HOME)
