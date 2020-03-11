@@ -26,12 +26,8 @@ Isso acontece porque o primeiro comando busca palavras exatamente igual ao digit
 porque independe das palavras maíusculas ou minúsculas. Neste caso, para o -name funcionar, o parâmetro teria que ser
 passado como MAKEDEV (escrito exatamente igual)
 
-    find /bin -name *v
+    find /bin -name *v (busca na pasta /bin, todos os nomes que terminam com a letra v minúscula)
 
-O comando acima busca na pasta /bin, todos os nomes que terminam com a letra v minúscula
+    find . -mtime +10 -mtime -13 (procura arquivos com mais de 10 dias, mas com menos de 13 dias no diretório atual)
 
-    find . -mtime +10 -mtime -13    
-
-O comando acima procura arquivos com mais de 10 dias, mas com menos de 13 dias no diretório atual
-
-    
+    find . -name s* -ls (busca todos os arquivos que começam com a letra s e faz uma lista)
