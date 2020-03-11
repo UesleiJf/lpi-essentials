@@ -23,4 +23,13 @@ Exemplos:
 
 O primeiro comando não retorna nada, pois não achou nenhuma ocorrência. Já o segundo comando retorna /sbin/MAKEDEV.
 Isso acontece porque o primeiro comando busca palavras exatamente igual ao digitado (makedev), o segundo retornou
-porque independe das palavras maíusculas ou minúsculas.
+porque independe das palavras maíusculas ou minúsculas. Neste caso, para o -name funcionar, o parâmetro teria que ser
+passado como MAKEDEV (escrito exatamente igual)
+
+    find /bin -name *v
+
+O comando acima busca na pasta /bin, todos os nomes que terminam com a letra v minúscula
+
+    
+
+    
