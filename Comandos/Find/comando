@@ -16,4 +16,11 @@ Usamos find [path...] [expressão]
 
 - exec command {} \; (Roda esse comando em todos os arquivos que achar);
 
+Exemplos:
 
+    find /sbin/ -name makedev
+    find /sbin/ -iname makedev
+
+O primeiro comando não retorna nada, pois não achou nenhuma ocorrência. Já o segundo comando retorna /sbin/MAKEDEV.
+Isso acontece porque o primeiro comando busca palavras exatamente igual ao digitado (makedev), o segundo retornou
+porque independe das palavras maíusculas ou minúsculas.
