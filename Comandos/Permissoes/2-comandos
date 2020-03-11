@@ -6,3 +6,11 @@ A saída será a seguinte:
 ls: não é possível acessar 'Diretorio/arquivo': Permissão negada
 total 0
 -????????? ? ? ? ?            ? arquivo
+
+- Para manter arquivos com permissões distintas, podemos criar um diretório centralizado para todos
+os usuários do sistema, manipulando apenas a permissão do grupo.
+
+    ls -ld /usr/local/compartilhado
+
+
+
