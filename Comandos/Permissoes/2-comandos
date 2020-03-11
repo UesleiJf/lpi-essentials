@@ -25,3 +25,6 @@ E pode ser alterado usando o comando "umask", ele define o padrão das permissõ
     umask [-S] [mode
 
 Pode-se pensar no umask como o contrário do chmod]
+
+Um exemplo de umask, para um diretório com chmod 777, quando é executado umask -022, o diretório ficará com
+755. Ou seja, houve uma subtração. Com o mesmo umask, um arquivo com chmod 666 ficará ao final 644.
