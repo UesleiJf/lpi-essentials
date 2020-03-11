@@ -1,1 +1,19 @@
 - Finding Files and Directories
+
+Usamos find [path...] [expressão]
+
+-name padrão (Busca arquivos e diretórios que tem esse padrão);
+
+-iname padrao (Busca igual -name, mas ignora maíusculas e minúsculas);
+
+-ls (mostra os resultados em formato de listagem);
+
+-mtime days (Busca os arquivos a partir das datas);
+
+-size num (busca os arquivos com tamanho "num");
+
+-newer file (Busca os arquivos tão novos quanto o "file");
+
+- exec command {} \; (Roda esse comando em todos os arquivos que achar);
+
+
