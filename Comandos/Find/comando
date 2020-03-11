@@ -31,3 +31,5 @@ passado como MAKEDEV (escrito exatamente igual)
     find . -mtime +10 -mtime -13 (procura arquivos com mais de 10 dias, mas com menos de 13 dias no diretório atual)
 
     find . -name s* -ls (busca todos os arquivos que começam com a letra s e faz uma lista)
+
+    find . -size +1M (busca arquivos maiores que 1M)
