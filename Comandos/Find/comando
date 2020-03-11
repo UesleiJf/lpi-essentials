@@ -30,6 +30,8 @@ passado como MAKEDEV (escrito exatamente igual)
 
 O comando acima busca na pasta /bin, todos os nomes que terminam com a letra v minúscula
 
-    
+    find . -mtime +10 -mtime -13    
+
+O comando acima procura arquivos com mais de 10 dias, mas com menos de 13 dias no diretório atual
 
     
