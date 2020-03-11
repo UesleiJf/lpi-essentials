@@ -28,3 +28,6 @@ Pode-se pensar no umask como o contrário do chmod]
 
 Um exemplo de umask, para um diretório com chmod 777, quando é executado umask -022, o diretório ficará com
 755. Ou seja, houve uma subtração. Com o mesmo umask, um arquivo com chmod 666 ficará ao final 644.
+
+Usando uma umask de 002 é ideal para trabalhar do seu grupo, onde somente os membros do grupo podem manipular esses 
+arquivos e diretórios.
