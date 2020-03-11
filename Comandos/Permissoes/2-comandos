@@ -25,7 +25,7 @@ O padrão de permissões na criação de arquivos e pastas são:
 
 E pode ser alterado usando o comando "umask", ele define o padrão das permissões na criação de diretórios e pastas
 
-    umask [-S] [mode
+    umask [-S] [mode]
 
 Pode-se pensar no umask como o contrário do chmod]
 
@@ -34,3 +34,10 @@ Um exemplo de umask, para um diretório com chmod 777, quando é executado umask
 
 Usando uma umask de 002 é ideal para trabalhar do seu grupo, onde somente os membros do grupo podem manipular esses 
 arquivos e diretórios.
+
+    umask
+0022
+    umask -S
+u=rwx, g=rx, o=rx
+
+    Ou seja o 0022 subtraiu o 777 do diretório e ficou 755 como vemos na saída acima.
