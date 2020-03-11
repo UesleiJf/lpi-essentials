@@ -8,6 +8,8 @@
 
 - Manipular processos em segundo plano.
 
+- Para ver os processos que estão rodando no sistema podemos usar o comando "top", ou o programa "htop".
+
     bg [%num] (Suspende o processo em segundo plano, o "num" equivale ao processo que quer suspender, caso não seja passado, o bg irá operar no trabalho atual)
 
     fg [%num] (Coloca em primeiro plano um processo que estava em segundo plano, caso não seja passado o "num", o fg irá operar no trabalho atual)
