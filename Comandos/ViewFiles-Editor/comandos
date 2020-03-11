@@ -11,5 +11,3 @@ head file (mostra as 10 primeiras linhas do arquivo, se passado o parâmetro -n 
 tail file (mostra as 10 últimas linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas que mostrará)
 
 tail -f file (Deixa o arquivo aberto e acompanha as suas alterações sempre que salvas
-
-Bora testar o tail -f salvando aqui pelo terminal
