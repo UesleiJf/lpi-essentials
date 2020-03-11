@@ -3,3 +3,7 @@ Comandos para ver conteúdos nos arquivos e editores de arquivos
 cat file (Mostra o conteúdo do arquivo)
 
 more file (Permite que você navegue através de um arquivo)
+
+less file (É como o more porém com mais recursos)
+
+head file (mostra as primeiras linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas)
