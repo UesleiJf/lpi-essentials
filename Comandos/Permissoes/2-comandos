@@ -8,7 +8,8 @@ total 0
 -????????? ? ? ? ?            ? arquivo
 
 - Para manter arquivos com permissões distintas, podemos criar um diretório centralizado para todos
-os usuários do sistema, manipulando apenas a permissão do grupo.
+os usuários do sistema, manipulando apenas a permissão do grupo. Porém as permissões do diretório
+podem entrar em conflito com as permissões do arquivo, tornando o acesso ao mesmo inviável.
 
     ls -ld /usr/local/compartilhado
 
