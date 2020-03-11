@@ -1,0 +1,8 @@
+- Em um diretório, dê permissão chmod 400 "Diretorio" e deixe um arquivo dentro dele.
+
+Depois execute ls -l diretorio
+A saída será a seguinte:
+
+ls: não é possível acessar 'Diretorio/arquivo': Permissão negada
+total 0
+-????????? ? ? ? ?            ? arquivo
