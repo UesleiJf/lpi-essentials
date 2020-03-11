@@ -10,8 +10,15 @@ total 0
 - Para manter arquivos com permissões distintas, podemos criar um diretório centralizado para todos
 os usuários do sistema, manipulando apenas a permissão do grupo. Porém as permissões do diretório
 podem entrar em conflito com as permissões do arquivo, tornando o acesso ao mesmo inviável.
+É necessário conferir todos os diretórios pais do arquivo.
+
 
     ls -ld /usr/local/compartilhado
 
+O padrão de permissões na criação de arquivos e pastas são:
 
+777 para diretórios
+666 para arquivos
+
+E pode ser alterado usando o comando "umask"
 
