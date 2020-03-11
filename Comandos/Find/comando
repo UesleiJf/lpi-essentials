@@ -35,3 +35,5 @@ passado como MAKEDEV (escrito exatamente igual)
     find . -size +1M (busca arquivos maiores que 1M)
 
     find . -type d -newer file.txt(busca os diretórios mais novos que o arquivo file.txt)
+
+    find . -exec file {} \; (busca tudo no diretório atual e vai executar o comando file(mostra o tipo do arquivo) em todos os resultados da pesquisa)
