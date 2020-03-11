@@ -33,3 +33,5 @@ passado como MAKEDEV (escrito exatamente igual)
     find . -name s* -ls (busca todos os arquivos que começam com a letra s e faz uma lista)
 
     find . -size +1M (busca arquivos maiores que 1M)
+
+    find . -type d -newer file.txt(busca os diretórios mais novos que o arquivo file.txt)
