@@ -4,3 +4,6 @@ Existe um atraso entre o tempo que o índice é criado e o horário que você ex
 
 Se você procura por um arquivo que foi criado apenas dois ou três minutos atrás, as chances são de que não vai estár no índice de resultado.
 A melhor chance para encontrar arquivos nessa condição é com o comando find, ele sim avalia os arquivos e diretórios em tempo real.
+Em alguns sistemas o locate não está habilitado por padrão.
+
+
