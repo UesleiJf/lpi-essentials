@@ -6,8 +6,8 @@ more file (Permite que você navegue através de um arquivo)
 
 less file (É como o more porém com mais recursos)
 
-head file (mostra as primeiras linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas que mostrará)
+head file (mostra as 10 primeiras linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas que mostrará)
 
-tail file (mostra as últimas linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas que mostrará)
+tail file (mostra as 10 últimas linhas do arquivo, se passado o parâmetro -n define a quantidade de linhas que mostrará)
 
 tail -f file (Deixa o arquivo aberto e acompanha as suas alterações sempre que salvas)
