@@ -1,7 +1,11 @@
 -Manipulando arquivos
 
-rm arquivo (Remove o arquivo)
+Removendo arquivos
 
-rm -r dir (remove o diretório e seu conteúdo recursivamente)
+    rm arquivo (Remove o arquivo)
 
-rm -f arquivo (remove forçadamente o diretório)
+    rm -r dir (remove o diretório e seu conteúdo recursivamente)
+
+    rm -f arquivo (remove forçadamente o diretório)
+
+
