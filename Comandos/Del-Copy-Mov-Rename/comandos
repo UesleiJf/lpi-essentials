@@ -1,6 +1,6 @@
 -Manipulando arquivos
 
-Removendo arquivos
+Removendo arquivos/diretórios
 
     rm arquivo (Remove o arquivo)
 
@@ -8,4 +8,10 @@ Removendo arquivos
 
     rm -f arquivo (remove forçadamente o diretório)
 
+Copiando arquivos/diretórios
 
+    cp arquivo destino (copia o arquivo para o destino especificado)
+
+    cp arquivo1 arquivo2 arquivo3 destino (copia vários arquivos para um destino)
+
+    
