@@ -1,1 +1,6 @@
-Manipulando arquivos
+-Manipulando arquivos
+
+rm arquivo (Remove o arquivo)
+
+rm -r dir (remove o diretório e seu conteúdo recursivamente)
+
