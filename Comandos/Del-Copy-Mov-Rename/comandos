@@ -4,3 +4,4 @@ rm arquivo (Remove o arquivo)
 
 rm -r dir (remove o diretório e seu conteúdo recursivamente)
 
+rm -f arquivo (remove forçadamente o diretório)
