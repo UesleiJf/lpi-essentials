@@ -14,4 +14,6 @@ Copiando arquivos/diretórios
 
     cp arquivo1 arquivo2 arquivo3 destino (copia vários arquivos para um destino)
 
-    
+    cp -i arquivo destino (copia no modo interativo)
+
+    cp -r diretorio destino (copia recursivamente o diretório)
