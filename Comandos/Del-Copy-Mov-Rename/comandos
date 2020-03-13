@@ -59,4 +59,6 @@ Zip
 
 Disk Usage (du)
 
-    du (Estima o uso dos arquivos)
+    du arquivo/arquivo (Estima o uso dos arquivos)
+
+    du -k diretório/arquivo (mostra o tamanho em Kilobytes)
