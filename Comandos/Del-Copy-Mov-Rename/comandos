@@ -40,3 +40,5 @@ Comandos
     tar t (mostra a lista de arquivos)
 
     tar v (Verboso) 
+
+    tar z (Usa compressão)
