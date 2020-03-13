@@ -52,3 +52,5 @@ Zip
     gzip arquivo(Compacta o arquivo)
 
     gunzip (Descomprime o arquivo)
+
+    gzcat (Concatena arquivos comprimidos)
