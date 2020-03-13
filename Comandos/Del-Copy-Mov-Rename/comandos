@@ -23,3 +23,4 @@ Movendo arquivos
 
     mv arquivo arquivoNovo (renomeia arquivo ou diretórios)
 
+    mv arquivo destino (move o arquivo ou diretório para o destino desejado)
