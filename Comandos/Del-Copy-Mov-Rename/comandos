@@ -24,3 +24,5 @@ Movendo arquivos
     mv arquivo arquivoNovo (renomeia arquivo ou diretórios)
 
     mv arquivo destino (move o arquivo ou diretório para o destino desejado)
+
+    mv -i arquivo destino (move o arquivo para o destino, e se o destino já existir, é perguntado se deseja substituí-lo)
