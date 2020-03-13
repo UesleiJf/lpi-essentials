@@ -38,3 +38,5 @@ Comandos
     tar x (Extrai arquivos)
 
     tar t (mostra a lista de arquivos)
+
+    tar v (Verboso)
