@@ -56,3 +56,7 @@ Zip
     gzcat (Concatena arquivos comprimidos)
 
     zcat (concatena arquivos)
+
+Disk Usage (du)
+
+    du (Estima o uso dos arquivos)
