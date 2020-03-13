@@ -29,9 +29,13 @@ Movendo arquivos
 
 Comandos
 
+Sort
+
     sort file (ordena em ordem crescente as linhas do arquivo)
 
     sort -r file (ordena em ordem descrescente as linhas do arquivo)
+
+Tar
 
     tar c (Cria um arquivo)
 
@@ -42,3 +46,8 @@ Comandos
     tar v (Verboso) 
 
     tar z (Usa compressão)
+
+Zip
+
+    
+
