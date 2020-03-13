@@ -36,3 +36,5 @@ Comandos
     tar c (Cria um arquivo)
 
     tar x (Extrai arquivos)
+
+    tar t (mostra a lista de arquivos)
