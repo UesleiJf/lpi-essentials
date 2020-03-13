@@ -18,4 +18,8 @@ Copiando arquivos/diretórios
 
     cp -r diretorio destino (copia recursivamente o diretório)
 
-    
+   
+Movendo arquivos
+
+    mv arquivo arquivoNovo (renomeia arquivo ou diretórios)
+
