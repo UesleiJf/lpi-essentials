@@ -62,3 +62,5 @@ Disk Usage (du)
     du arquivo/arquivo (Estima o uso dos arquivos)
 
     du -k diretório/arquivo (mostra o tamanho em Kilobytes)
+
+    du -h diretorio/arquivo (mostra o tamanho de forma amigável para melhor entendimento)
