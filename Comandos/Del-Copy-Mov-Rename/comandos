@@ -34,3 +34,5 @@ Comandos
     sort -r file (ordena em ordem descrescente as linhas do arquivo)
 
     tar c (Cria um arquivo)
+
+    tar x (Extrai arquivos)
