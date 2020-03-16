@@ -1,7 +1,15 @@
-Computação nas nuvens, refere-se à possibilidade de acessar arquivos e executar diferentes tarefas pela internet.
+- Computação nas nuvens, refere-se à possibilidade de acessar arquivos e executar diferentes tarefas pela internet.
 
-SaaS (Software as a Service) - Netflix, Spotfy, Dropbox, Office365;
+  SaaS (Software as a Service) - Netflix, Spotfy, Dropbox, Office365;
 
-Paas (Platform as a Service) - É a contratação de plataforma para desenvolvimento;
+  Paas (Platform as a Service) - É a contratação de plataforma para desenvolvimento;
 
-laaS(Infraestructure as a Service) - É a contratação de equipamentos como serviço, exemplo: EC2 da AWS
+  laaS(Infraestructure as a Service) - É a contratação de equipamentos como serviço, exemplo: EC2 da AWS
+
+- Acessar Webserver
+
+  Servidor: cloud.com.br
+  Porta: 22
+  Login e Senha: credenciais
+
+  # ssh -l email@dominio.com.br cloud.com.br
