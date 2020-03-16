@@ -13,13 +13,13 @@ Os principais centros certificadores são:
         - LPIC-2 (Engineer Level)
         - LPIC-3 (Senior Level) - São 3 escolhas para a prova.
 
-Informações Adicionais:
+    Informações Adicionais:
 
-    Provas aplicadas pelo LPI Brasil ou VUE;
-    Provas em Português apenas Nível 1 e 2;
-    Tempo de validade: 5 anos;
-    Certificações nível 1 e 2 são 2 provas;
-    Certificação nível 3 é apenas 1 prova.
+        Provas aplicadas pelo LPI Brasil ou VUE;
+        Provas em Português apenas Nível 1 e 2;
+        Tempo de validade: 5 anos;
+        Certificações nível 1 e 2 são 2 provas;
+        Certificação nível 3 é apenas 1 prova.
 
 - Redhat
 
@@ -34,3 +34,13 @@ Informações Adicionais:
         - RHCA - Red Hat Certified Architect
 
 - The Linux Foundation.
+
+    - Metodologia de aplicação de provas práticas;
+    - Escolha a sua distribuição;
+    - Não depende de Escolas autorizadas para execução das provas;
+    - Primeiro centro certificador a fechar parceria com a Microsoft
+
+    - Certificações Linux Foundation
+
+        - SysAdmin Linux Professional;
+        - Engineer Linux Professional
