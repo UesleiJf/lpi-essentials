@@ -13,3 +13,8 @@
   Login e Senha: credenciais
 
   # ssh -l email@dominio.com.br cloud.com.br
+
+
+- PTS
+
+  Pseudos terminais para acesso SSH
