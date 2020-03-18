@@ -13,19 +13,19 @@
 
 - Tipos de licenças:
 
-    GNU General Public License (GPL)
+    1 - GNU General Public License (GPL)
     
         É designada para licenciar Softwares Livres
 
-    GNU Affero General Public License (AGPL)
+    2 - GNU Affero General Public License (AGPL)
     
         É semelhante ao GPL, porém visa fornecer as liberdades para os softwares enquadrados em SaaS(Software as a Service)
 
-    GNU Free Documentation License (FDL)
+    3 - GNU Free Documentation License (FDL)
 
         Utilizado para textos, apresentações e conteúdos da web.
 
-    GNU Lesser General Public License (LGPL)
+    4 - GNU Lesser General Public License (LGPL)
     
         É como a GPL, porém menos "aberta", podendo licenciar softwares proprietários.
         
