@@ -1,4 +1,4 @@
-### Information
+## Information
 
 LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
 
@@ -13,6 +13,6 @@ LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
 
 - Some materials in this repository are from forums and websites, and are not of their own authorship.
 
-Created by Ueslei J F da Silva. 2020.
+Created by Ueslei J F da Silva - 2020.
 
 
