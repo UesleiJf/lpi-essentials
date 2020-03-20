@@ -1,8 +1,8 @@
-### Information
+## Information
 
 LPI Essentials preparatory repository. (https://www.lpi.org/pt/-)
 
-- Using internet content like:
+- Using internet content like (some study):
      - Udemy/BR, 
      - Udemy/EN,
      - VivaOLinux,
