@@ -4,28 +4,28 @@
 
     GNU é um sistema operacional criado por Richard Stallman, e foi desenvolvido com base no UNIX. 
     Em paralelo, nessa época, Linus Torvalds utilizando o Minix, decide criar o seu próprio Kernel (Linux, Linus + Unix), com objetivo pessoal.
-    Com o kernel criado, ele utiliza o GNU, que já havia sido disponibilizado e licenciado sob a GPL. Linus decide então licenciar o GNU/Linux com 
-        a GPL.
+    Com o kernel criado, ele utiliza o GNU, que já havia sido disponibilizado e licenciado sob a GPL. Linus decide então licenciar o GNU/Linux com
+    a GPL.
 
 - Licenciamento OpenSource
 
-    FSF - Free Software Foundation
+    FSF - Free Software Foundation.
 
 - Tipos de licenças:
 
-    1 - GNU General Public License (GPL)
+    1 - GNU General Public License (GPL);
     
         - É designada para licenciar Softwares Livres
 
-    2 - GNU Affero General Public License (AGPL)
+    2 - GNU Affero General Public License (AGPL);
     
         - É semelhante ao GPL, porém visa fornecer as liberdades para os softwares enquadrados em SaaS(Software as a Service)
 
-    3 - GNU Free Documentation License (FDL)
+    3 - GNU Free Documentation License (FDL);
 
         - Utilizado para textos, apresentações e conteúdos da web.
 
-    4 - GNU Lesser General Public License (LGPL)
+    4 - GNU Lesser General Public License (LGPL);
     
         - É como a GPL, porém menos "aberta", podendo licenciar softwares proprietários.
         
