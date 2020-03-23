@@ -4,7 +4,7 @@
 
   Paas (Platform as a Service) - É a contratação de plataforma para desenvolvimento;
 
-  laaS(Infraestructure as a Service) - É a contratação de equipamentos como serviço, exemplo: EC2 da AWS
+  laaS(Infraestructure as a Service) - É a contratação de equipamentos como serviço, exemplo: EC2 da AWS.
 
 - Acessar Webserver
 
@@ -17,4 +17,4 @@
 
 - PTS
 
-  Pseudos terminais para acesso SSH
+  Pseudos terminais para acesso SSH.
