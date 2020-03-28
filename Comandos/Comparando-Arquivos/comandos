@@ -1,7 +1,9 @@
-Comparando arquivos
+Comparando arquivos:
 
 diff arquivo1 arquivo2 (Compara 2 arquivos)
 
 sdiff arquivo1 arquivo2 (Compara lado a lado os arquivos)
 
 vimdiff arquivo1 arquivo2 (Compara os 2 arquivos no editor vim)
+
+
