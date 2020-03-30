@@ -1,6 +1,9 @@
 Comparando arquivos:
 
 diff arquivo1 arquivo2 (Compara 2 arquivos)
+3c3
+
+   O primeiro número representa a linha do primeiro arquivo
 
 sdiff arquivo1 arquivo2 (Compara lado a lado os arquivos)
 
