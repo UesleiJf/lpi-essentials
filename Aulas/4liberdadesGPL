@@ -1,11 +1,11 @@
-- 4 Liberdades da GPL
+- 4 Liberdades da GPL:
 
   1 - Liberdade de executar o programa como você desejar, para qualquer propósito;
   2 - Liberdade de estudar como o programa funciona, e adaptá-lo às suas necessidades (Acesso ao código fonte é um pré-requisito);
   3 - Liberdade de redistribuir cópias de modo que você possa ajudar o próximo (Acesso ao código fonte é um pré-requisito);
   4 - Liberdade de distribuir cópias de suas versões modificadas a outros.
 
-Definição de Software Livre
+Definição de Software Livre:
 
   Por "software livre", devemos entender aquele software que respeita a liberdade e senso de comunidade dos usuários. 
   Para entender o conceito, pense em "liberdade de expressão", não em "cerveja grátis"
@@ -16,19 +16,19 @@ GNU/Linux é OpenSource, ele pode ter custo ou ser gratuíto. Software Livre nã
 
   Apache, LibreOffice, Nginx, Jenkins, Zimbra, Hadoop, Firefox, VirtualBox, Docker, GoogleChrome...
 
-- Distribuições Linux
+- Distribuições Linux:
 
-  - RedHat(Original)
+  - RedHat(Original):
       Fedora(Devirado)
       CentOS(Derivado)
 
-  - Debian(Original)
+  - Debian(Original):
       Ubuntu(Derivado)
 
-  - Slackware(Original)
+  - Slackware(Original):
       OpenSuse(Derivado)
 
-  - Android
+  - Android.
 
   - Arch Linux.
 
